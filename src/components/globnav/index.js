@@ -10,7 +10,6 @@ class GlobNav extends Component {
           <ul className="Globnav-row">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/example">Example</Link></li>
             <li><Link to="/en">English</Link></li>
             <li><a href="">WordPress.org</a></li>
             <li><a href="">GitHub</a></li>
