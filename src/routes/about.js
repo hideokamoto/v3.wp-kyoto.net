@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 class RouteAbout extends Component {
   render() {
-    const {match} = this.props
     return (
       <div>
-        <h3>single topic content</h3>
-        <p>{match.params.topicId}</p>
+        <h3>このサイトについて</h3>
+        <p>WordPressのことやAWSとかを覚え書き的に書いてるブログです。</p>
+        <p>たまにイベント登壇とかもしてるので、そのフォローアップを書いたりもしてます。</p>
       </div>
     )
   }
