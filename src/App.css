@@ -4,6 +4,7 @@
 .wrap {
   max-width: 1000px;
   padding: 0.75em 3.4166666666667em;
+  margin: 0 auto;
 }
 
 .App {
