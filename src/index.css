@@ -3,3 +3,132 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  color: #404040;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+dfn, cite, em, i, blockquote {
+  font-style: normal;
+  text-decoration: none;
+}
+
+em, i {
+  background: #e7e5e1;
+}
+pre {
+  font-size: 1em;
+  line-height: 1em;
+}
+body {
+  font-family: "Open Sans", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bitter", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  margin: 24px 0;
+}
+h1 {
+  color: #222;
+  font-size: 28px;
+}
+
+h2 {
+  color: #222;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+h3 {
+  color: #222;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h4 {
+  color: #222;
+  font-size: 16px;
+}
+
+h5 {
+  color: #222;
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+hr {
+  background-color: #5c544b;
+}
+
+blockquote {
+  color: #9a9283;
+  border-left: 5px solid rgba(154, 146, 131, 0.25);
+  font-size: 16px;
+  font-weight: normal;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #5c544b;
+  color: #d4d4cc;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #222;
+}
+
+textarea {
+  background: #d4d4cc;
+  border: 1px solid #d4d4cc;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 24px;
+}
+
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+code, kbd, tt, var {
+  font-size: 0.9em;
+  padding: 2px 4px;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #9a9283;
+}
+
+td, th {
+  border-bottom: 1px solid rgba(154, 146, 131, 0.25);
+}
