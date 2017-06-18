@@ -1,0 +1,24 @@
+.Globnav {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.Globnav-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.Globnav-row a {
+  display: block;
+  padding: 1em 1.25em;
+  text-decoration: none;
+  color: #222;
+  transition: background-color 0.2s, color 0.2s;
+}
+.Globnav-row a:hover {
+  background-color: #f5f5f5;
+  color: #767676;
+}

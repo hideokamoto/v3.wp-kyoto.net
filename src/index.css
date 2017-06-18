@@ -133,6 +133,11 @@ td, th {
   border-bottom: 1px solid rgba(154, 146, 131, 0.25);
 }
 
+.wrap {
+ max-width: 1000px;
+ padding: 0.75em 3.4166666666667em;
+ margin: 0 auto;
+}
 
 .table-wrap {
   max-width: 680px;

@@ -1,0 +1,234 @@
+import React, { Component } from 'react';
+import './index.css';
+
+class Single extends Component {
+  render() {
+    return (
+      <div className="wrap">
+        <div className="Post-meta">
+          <span>2017年6月9日</span>
+          <span>投稿者:</span>
+          <span>山田太郎</span>
+        </div>
+        <h2>Post Title</h2>
+        <div>
+          <p className="App-intro">
+            To get started, edit <code>src/App.js</code> and save to reload.
+          </p>
+          <h1>見出し壱：夏目漱石著『吾輩は猫である』</h1>
+          <h2>見出し弐：レオ・レオニ作『スイミー 小さなかしこいさかなのはなし』</h2>
+          <h3>見出し参：あまん きみこ作、上野 紀子絵『ちいちゃんのかげおくり』</h3>
+          <h4>見出し四：モンゴルの民話『スーホの白い馬』</h4>
+          <h5>見出し五：新美南吉作『手袋を買いに』</h5>
+          <h6>見出し六：芥川龍之介著『羅生門』</h6>
+          <h2>引用 (Blockquote) テスト</h2>
+
+          <blockquote>これは言語みたいなものだ。アルファベットすなわち音階を学び、文すなわちコードを学ぶ。そしてやがてホーンと即興で会話するようになる。即興で話すのはすばらしいことだと思うが、私には決して会得できないだろう。しかし音楽ともなれば、私は即座によろこんで会話する。そう、それがジャズ音楽のすべてだ。
+          <cite>スタン・ゲッツ</cite></blockquote>
+
+          <h2>テーブル</h2>
+          <table>
+          <thead>
+          <tr>
+          <th>社員</th>
+          <th>給料</th>
+          <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <th><a href="http://example.org/">山田太郎</a></th>
+          <td>1ドル</td>
+          <td>スティーブ・ジョブズが必要なサラリーと同じ額。</td>
+          </tr>
+          <tr>
+          <th><a href="http://example.org/">田中花子</a></th>
+          <td>1,000万円</td>
+          <td>ブログを書くために必要になる資金。</td>
+          </tr>
+          <tr>
+          <th><a href="http://example.org/">山本次郎</a></th>
+          <td>1億円</td>
+          <td>百聞は一見にしかず、ということで、カメラマンはブロガーの100倍。</td>
+          </tr>
+          <tr>
+          <th><a href="http://example.org/">中山愛子</a></th>
+          <td>10億円</td>
+          <td>特に理由は要りません。</td>
+          </tr>
+          </tbody>
+          </table>
+          <hr />
+          <div className="table-wrap">
+          <table>
+          <thead>
+          <tr>
+          <th>社員</th>
+          <th>給料</th>
+          <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <th><a href="http://example.org/">山田太郎</a></th>
+          <td>1ドル</td>
+          <td>スティーブ・ジョブズが必要なサラリーと同じ額。</td>
+          </tr>
+          <tr>
+          <th><a href="http://example.org/">田中花子</a></th>
+          <td>1,000万円</td>
+          <td>ブログを書くために必要になる資金。</td>
+          </tr>
+          <tr>
+          <th><a href="http://example.org/">山本次郎</a></th>
+          <td>1億円</td>
+          <td>百聞は一見にしかず、ということで、カメラマンはブロガーの100倍。</td>
+          </tr>
+          <tr>
+          <th><a href="http://example.org/">中山愛子</a></th>
+          <td>10億円</td>
+          <td>特に理由は要りません。</td>
+          </tr>
+          </tbody>
+          </table>
+          </div>
+          <dl><dt>定義リストタイトル（dt）</dt><dd>これは定義リストです。(dd)</dd><dt>定義の定義</dt><dd>物事、領域、何かについての意味の正確な文章や説明: <em>詩を構成するものの定義。</em></dd><dt>ギャラリーとはなにか</dt><dd>WordPress 2.5 から導入された、投稿に添付された画像を展示するための機能です。同じように、投稿を編集中にアップロードすると、そのファイルは「投稿に添付」されます。</dd><dt>Gravatar (グラバター)</dt><dd>グラバターとはグローバルに認識されるアバター (あるユーザーを表すグラフィックイメージや写真) です。グラバターはメールアドレスと紐づいていて、Gravatar.com サービスによって管理されています。このサービスを利用すると、ブログ所有者は自分のブログを設定することによりコメント欄にユーザーのグラバターを表示させることができます。</dd></dl>
+          <h2>非順序リスト (ネスト化)</h2>
+          <ul>
+            <li>リスト項目 1
+          <ul>
+            <li>リスト項目 1
+          <ul>
+            <li>リスト項目 1</li>
+            <li>リスト項目 2</li>
+            <li>リスト項目 3</li>
+            <li>リスト項目 4</li>
+          </ul>
+          </li>
+            <li>リスト項目 2</li>
+            <li>リスト項目 3</li>
+            <li>リスト項目 4</li>
+          </ul>
+          </li>
+            <li>リスト項目 2</li>
+            <li>リスト項目 3</li>
+            <li>リスト項目 4</li>
+          </ul>
+          <h2>順序リスト (ネスト化)</h2>
+          <ol>
+            <li>リスト項目 1
+          <ol>
+            <li>リスト項目 1
+          <ol>
+            <li>リスト項目 1</li>
+            <li>リスト項目 2</li>
+            <li>リスト項目 3</li>
+            <li>リスト項目 4</li>
+          </ol>
+          </li>
+            <li>リスト項目 2</li>
+            <li>リスト項目 3</li>
+            <li>リスト項目 4</li>
+          </ol>
+          </li>
+            <li>リスト項目 2</li>
+            <li>リスト項目 3</li>
+            <li>リスト項目 4</li>
+          </ol>
+          ネスト化された混合リストでは以下が正しく表示されるようにしてください。
+          <ul>
+            <li>リストの中のリストは番号付きリストの順番を壊さないこと</li>
+          </ul>
+          <h3>番号付きリスト - 番号なしリスト - 番号付きリスト</h3>
+          <ol>
+            <li>番号付きリストアイテム</li>
+            <li>番号付きリストアイテム
+          <ul>
+            <li><strong>番号なし</strong></li>
+            <li><strong>番号なし</strong>
+          <ol>
+            <li>番号付きリストアイテム</li>
+            <li>番号付きリストアイテム</li>
+          </ol>
+          </li>
+          </ul>
+          </li>
+            <li>番号付きリストアイテム</li>
+            <li>番号付きリストアイテム</li>
+          </ol>
+          <h3>番号付きリスト - 番号なしリスト - 番号なしリスト</h3>
+          <ol>
+            <li>番号付きリストアイテム</li>
+            <li>番号付きリストアイテム
+          <ul>
+            <li><strong>番号なし</strong></li>
+            <li><strong>番号なし</strong>
+          <ul>
+            <li>番号なしリストアイテム</li>
+            <li>番号なしリストアイテム</li>
+          </ul>
+          </li>
+          </ul>
+          </li>
+            <li>番号付きリストアイテム</li>
+            <li>番号付きリストアイテム</li>
+          </ol>
+          <h3>番号なしリスト - 番号付きリスト - 番号なしリスト</h3>
+          <ul>
+            <li>番号なしリストアイテム</li>
+            <li>番号なしリストアイテム
+          <ol>
+            <li>番号付き</li>
+            <li>番号付き
+          <ul>
+            <li>番号なしリストアイテム</li>
+            <li>番号なしリストアイテム</li>
+          </ul>
+          </li>
+          </ol>
+          </li>
+            <li>番号なしリストアイテム</li>
+            <li>番号なしリストアイテム</li>
+          </ul>
+          <h3>番号なしリスト - 番号なしリスト - 番号付きリスト</h3>
+          <ul>
+            <li>番号なしリストアイテム</li>
+            <li>番号なしリストアイテム
+          <ul>
+            <li>番号なし</li>
+            <li>番号なし
+          <ol>
+            <li><strong>番号付きリストアイテム</strong></li>
+            <li><strong>番号付きリストアイテム</strong></li>
+          </ol>
+          </li>
+          </ul>
+          </li>
+            <li>番号なしリストアイテム</li>
+            <li>番号なしリストアイテム</li>
+          </ul>
+
+          <h2>HTML 要素タグテスト</h2>
+
+          これは <a href="http://example.com/" rel="nofollow"><code>&lt;anchor&gt;</code></a> (もしくはリンクとも呼ばれます) の例です。
+
+          <strong>Delete タグ</strong>
+
+          <code>&lt;del&gt;</code> タグは<del>打ち消し線</del>などで表現されますが、このタグは HTML5 ではサポートされていません (代わりに <code>&lt;strike&gt;</code> を使ってください)。
+
+          <strong>Insert タグ</strong>
+
+          <code>&lt;ins&gt;</code> タグは<ins>挿入されたコンテンツ</ins>を意味します。
+
+          <strong>Strong タグ</strong>
+
+          このタグは<strong>太字</strong>テキストを表しています。
+
+
+        </div>
+      </div>
+    );
+  }
+}
+
+export default Single;
