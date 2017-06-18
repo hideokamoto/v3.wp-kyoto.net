@@ -28,7 +28,7 @@ export const getPostList = (pager, lang) => {
 
 export const getEnglishPostList = () => {
   return new Promise((resolve, reject) => {
-    wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en`).get()
+    wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en&_embed`).get()
     .then((data) => {
       if (data.length === PostNotFoundNumber) {
         reject(new Error('post not found'))
@@ -43,7 +43,7 @@ export const getEnglishPostList = () => {
 
 export const getEnglishPostBySlug = (slug) => {
   return new Promise((resolve, reject) => {
-    wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en&slug=${slug}`).get()
+    wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en&_embed&slug=${slug}`).get()
     .then((data) => {
       if (data.length === PostNotFoundNumber) {
         reject(new Error('post not found'))

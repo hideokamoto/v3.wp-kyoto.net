@@ -21,10 +21,8 @@ class RouteEnSingle extends Component {
   }
   render() {
     const {posts} = this.state
-    let post = ['Loading...']
-    post = posts[PostNotFoundNumber]
     return (
-      <Single post={post} />
+      <Single post={posts[PostNotFoundNumber]} />
     )
   }
 }

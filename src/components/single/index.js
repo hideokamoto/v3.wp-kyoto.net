@@ -8,11 +8,14 @@ class Single extends Component {
   }
   render() {
     const {post} = this.props
+    if ( post.date !== '') {
+      post.date = new Date(post.date).toLocaleString()
+    }
 
     return (
       <div className="wrap">
         <div className="Post-meta">
-          <span>{new Date(post.date).toLocaleString()}</span>
+          <span>{post.date}</span>
           <span>投稿者:</span>
           <span>{post._embedded.author[0].name}</span>
         </div>
