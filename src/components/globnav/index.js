@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './index.css';
 
 class GlobNav extends Component {
@@ -7,8 +8,10 @@ class GlobNav extends Component {
       <div className="Globnav">
         <nav className="wrap">
           <ul className="Globnav-row">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/example">Example</Link></li>
+            <li><Link to="/en">English</Link></li>
             <li><a href="">WordPress.org</a></li>
             <li><a href="">GitHub</a></li>
           </ul>
