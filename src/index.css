@@ -132,3 +132,45 @@ abbr, acronym {
 td, th {
   border-bottom: 1px solid rgba(154, 146, 131, 0.25);
 }
+
+
+.table-wrap {
+  max-width: 680px;
+  overflow: auto;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) 0 0/20px 100%, linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)) right/20px 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  border-right: 1px solid #CCC;
+}
+
+.table-wrap table {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white 15px) 0 0/50px 100%, linear-gradient(to right, rgba(255, 255, 255, 0), white 15px) right/50px 100%;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
+.table-wrap th {
+  border-top: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+  white-space: nowrap;
+
+}
+.table-wrap td {
+  border-top: 1px solid #CCC;
+  border-left: 1px solid #CCC;
+}
+
+table {
+  border-bottom: 1px solid #CCC;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+td {
+  padding: 10px;
+  white-space: nowrap;
+}
