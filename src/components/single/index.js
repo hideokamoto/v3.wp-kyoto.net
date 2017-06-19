@@ -13,7 +13,7 @@ class Single extends Component {
     }
 
     return (
-      <div className="wrap">
+      <div className="Single wrap">
         <div className="Post-meta">
           <span>{post.date}</span>
           <span>投稿者:</span>

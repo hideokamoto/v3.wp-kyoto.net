@@ -11,6 +11,11 @@
   margin: 0;
   padding: 0;
 }
+@media only screen and (max-width: 648px) {
+  .Globnav-row {
+    justify-content: space-around;
+  }
+}
 .Globnav-row a {
   display: block;
   padding: 1em 1.25em;

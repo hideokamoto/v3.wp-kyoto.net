@@ -3,6 +3,12 @@
   padding: 1rem 3rem;
   color: white;
 }
+@media only screen and (max-width: 648px) {
+  .Header {
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+  }
+}
 .Header-title {
   font-size: 2.25rem;
   margin-bottom: 0;

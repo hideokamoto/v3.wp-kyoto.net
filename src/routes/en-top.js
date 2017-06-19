@@ -10,13 +10,10 @@ class RouteEnTop extends Component {
     const {match} = this.props
 
     return (
-      <div>
-        <h3>English</h3>
-        <Switch>
-          <Route path={`${match.url}/:slug`} component={RouteEnSingle} />
-          <Route exact path={match.url} component={RouteEnArchive}/>
-        </Switch>
-      </div>
+      <Switch>
+        <Route path={`${match.url}/:slug`} component={RouteEnSingle} />
+        <Route exact path={match.url} component={RouteEnArchive}/>
+      </Switch>
     )
   }
 }
