@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import './index.css';
 
+import {Head} from '../head/index'
+
 class Single extends Component {
   createMarkup(content) {
     return {__html: content};
@@ -14,6 +16,7 @@ class Single extends Component {
 
     return (
       <div className="Single wrap">
+        <Head subTitle={post.title.rendered} />
         <div className="Post-meta">
           <span>{post.date}</span>
           <span>投稿者:</span>

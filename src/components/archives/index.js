@@ -3,6 +3,7 @@ import { PostNotFoundNumber } from '../../wp'
 import PropTypes from 'prop-types'
 import './index.css';
 import ArchiveItem from './item'
+import {Head} from '../head/index'
 
 class Archives extends Component {
   render() {
@@ -17,6 +18,7 @@ class Archives extends Component {
     }
     return (
       <div className="Archives">
+        <Head subTitle="" />
         {Posts}
       </div>
     );
