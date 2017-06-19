@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import './index.css';
 import ArchiveItem from './item'
 import {Head} from '../head/index'
+import {renderered} from '../../prerender'
 
 class Archives extends Component {
   render() {
