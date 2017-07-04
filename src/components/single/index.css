@@ -1,3 +1,16 @@
 .Single div {
   word-break: break-word;
 }
+
+.SingleScrollTop {
+  display: block;
+  padding: 15px 0;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+.SingleScrollTop:hover {
+  background-color: #eee;
+  opacity: 0.7;
+}

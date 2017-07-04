@@ -22,7 +22,7 @@ class RouteEnSingle extends Component {
   render() {
     const {posts} = this.state
     return (
-      <Single post={posts[PostNotFoundNumber]} />
+      <Single post={posts[PostNotFoundNumber]} lang='en'/>
     )
   }
 }

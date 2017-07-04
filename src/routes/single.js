@@ -25,7 +25,7 @@ class RouteSingle extends Component {
     post = posts[PostNotFoundNumber]
 
     return (
-      <Single post={post} />
+      <Single post={post}  lang='ja'/>
     )
   }
 }

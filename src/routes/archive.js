@@ -33,7 +33,7 @@ class RouteArchive extends Component {
       <div>
         <h3>Archive</h3>
         <p>{match.params.topicId}</p>
-        <Archive />
+
       </div>
     )
   }

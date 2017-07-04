@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import './index.css';
-import {renderered} from '../../prerender'
+import WidgetArchive from '../widget/archive'
 
 import {Head} from '../head/index'
 
@@ -10,13 +10,13 @@ class Single extends Component {
     return {__html: content};
   }
   render() {
-    const {post} = this.props
+    const {post, lang} = this.props
     if ( post.date !== '') {
       post.date = new Date(post.date).toLocaleString()
     }
 
     return (
-      <div className="Single wrap">
+      <div className="Single wrap" id="single">
         <Head subTitle={post.title.rendered} />
         <div className="Post-meta">
           <span>{post.date}</span>
@@ -25,6 +25,9 @@ class Single extends Component {
         </div>
         <h2 dangerouslySetInnerHTML={this.createMarkup(post.title.rendered)} />
         <div dangerouslySetInnerHTML={this.createMarkup(post.content.rendered)} />
+        <hr />
+        <WidgetArchive lang={lang}/>
+        <a href="#single" className="SingleScrollTop">TOPに戻る</a>
       </div>
     );
   }
@@ -46,7 +49,8 @@ Single.propTypes = {
         })
       )
     })
-  })
+  }),
+  'lang': PropTypes.string
 }
 Single.defaultProps = {
   'post': {
@@ -62,7 +66,8 @@ Single.defaultProps = {
         {'name': ''}
       ]
     }
-  }
+  },
+  'lang': 'ja'
 }
 
 export default Single;
