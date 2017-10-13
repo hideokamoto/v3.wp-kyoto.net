@@ -22,6 +22,18 @@ class App extends Component {
           <Globnav />
           <div className="Main">
             <main className="wrap">
+              <iframe
+                src="https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF"
+                width="728"
+                height="90"
+                scrolling="no"
+                style={{
+                  border:'none',
+                  display: 'block',
+                  margin: '0 auto',
+                  maxWidth: '100%',
+                }}
+              />
               <Switch>
                 <Route exact path="/about" component={RouteAbout} />
                 <Route exact path="/" component={RouteTop} />
