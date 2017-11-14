@@ -1,2 +1,2 @@
-/feed https://api.wp-kyoto.net/feed 200
+/feed* https://api.wp-kyoto.net/feed/:splat 200
 /* /index.html 200
