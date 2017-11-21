@@ -31,10 +31,21 @@ em, i {
 pre {
   font-size: 1em;
   line-height: 1em;
+  overflow: scroll;
 }
 body {
   font-family: "Open Sans", "Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック", Helvetica, Arial, sans-serif;
   font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+  @media only screen and(-webkit-min-device-pixel-ratio: 2),(min-resolution: 2dppx) {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  -moz-font-feature-settings: "palt";
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  font-variant-ligatures: no-common-ligatures;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -190,4 +201,10 @@ th {
 td {
   padding: 10px;
   white-space: nowrap;
+}
+
+.wp-caption,
+img {
+  max-width: 100%;
+  height: auto;
 }

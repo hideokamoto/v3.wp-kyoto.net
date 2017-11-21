@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
 import './index.css';
-import WidgetArchive from '../widget/archive'
 
 import {Head} from '../head/index'
 
@@ -26,7 +25,6 @@ class Single extends Component {
         <h2 dangerouslySetInnerHTML={this.createMarkup(post.title.rendered)} />
         <div dangerouslySetInnerHTML={this.createMarkup(post.content.rendered)} />
         <hr />
-        <WidgetArchive lang={lang}/>
         <a href="#single" className="SingleScrollTop">TOPに戻る</a>
       </div>
     );
