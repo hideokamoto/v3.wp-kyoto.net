@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'react-router-redux';
+
 import {
   BrowserRouter,
   Route,
@@ -13,6 +17,10 @@ import RouteAbout from './routes/about'
 import RouteEnTop from './routes/en-top'
 import RouteSingle from './routes/single'
 
+// Store
+import { history, configureStore } from './redux/stores/configureStore';
+const initialState = {}
+const store = configureStore(initialState);
 class AppRoutes extends React.Component {
   componentWillUpdate() {
     const MauticJS = 'MauticJS'
@@ -32,7 +40,7 @@ class AppRoutes extends React.Component {
   }
 }
 
-class App extends Component {
+class RouterLayout extends React.Component {
   render() {
     return (
       <BrowserRouter>
@@ -58,6 +66,14 @@ class App extends Component {
           </div>
         </div>
       </BrowserRouter>
+    )
+  }
+}
+
+class App extends Component {
+  render() {
+    return (
+      <RouterLayout />
     );
   }
 }
