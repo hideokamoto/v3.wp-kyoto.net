@@ -13,6 +13,25 @@ import RouteAbout from './routes/about'
 import RouteEnTop from './routes/en-top'
 import RouteSingle from './routes/single'
 
+class AppRoutes extends React.Component {
+  componentWillUpdate() {
+    const MauticJS = 'MauticJS'
+    if (window.hasOwnProperty(MauticJS)) {
+      window[MauticJS].sendPageview()
+    }
+  }
+  render () {
+    return (
+      <Switch>
+        <Route exact path="/about" component={RouteAbout} />
+        <Route exact path="/" component={RouteTop} />
+        <Route path="/en" component={RouteEnTop} />
+        <Route path="/:slug" component={RouteSingle} />
+      </Switch>
+    )
+  }
+}
+
 class App extends Component {
   render() {
     return (
@@ -34,12 +53,7 @@ class App extends Component {
                   maxWidth: '100%',
                 }}
               />
-              <Switch>
-                <Route exact path="/about" component={RouteAbout} />
-                <Route exact path="/" component={RouteTop} />
-                <Route path="/en" component={RouteEnTop} />
-                <Route path="/:slug" component={RouteSingle} />
-              </Switch>
+              <AppRoutes />
             </main>
           </div>
         </div>
