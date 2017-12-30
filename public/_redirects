@@ -1,2 +1,3 @@
 /feed* https://api.wp-kyoto.net/feed/:splat 200
+/blogs* grave-hoover6726.on.getshifter.io/:splat 200
 /* /index.html 200
