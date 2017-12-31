@@ -13,6 +13,7 @@ import {
 // components
 
 // Pages
+import PageAbout from './pages/About';
 
 // Routes
 import JaRoutes from './Japan';
@@ -30,7 +31,7 @@ class Routes extends React.Component {
   render () {
     return (
       <Switch>
-        <Route exact path="/about" component={() => <p>RouteAbout</p>} />
+        <Route exact path="/about" component={PageAbout} />
         <Route path="/en" component={EnRoutes} />
         <Route path="/" component={JaRoutes} />
       </Switch>
