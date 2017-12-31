@@ -16,16 +16,33 @@ import {
 } from '../settings/lang'
 
 class ContainerSingleWPPost extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSlug: ''
+    }
+  }
   componentWillMount() {
+    this.getPosts(this.props);
+  }
+  componentWillUnmount() {
+    this.props.dispatch(unsetWpPost());
+  }
+  componentWillReceiveProps(props) {
+    if (this.state.currentSlug !== props.slug) {
+      this.getPosts(props);
+    }
+  }
+  getPosts(props) {
     const {
       dispatch,
       lang,
       slug,
-    } = this.props;
+    } = props;
+    this.setState({
+      currentSlug: slug,
+    });
     dispatch(getWpPost(slug, lang));
-  }
-  componentWillUnmount() {
-    this.props.dispatch(unsetWpPost());
   }
   render() {
     const {
