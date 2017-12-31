@@ -73,7 +73,11 @@ class RouterLayout extends React.Component {
 class App extends Component {
   render() {
     return (
-      <RouterLayout />
+      <Provider store={store}>
+        <ConnectedRouter history={history}>
+          <RouterLayout />
+        </ConnectedRouter>
+      </Provider>
     );
   }
 }
