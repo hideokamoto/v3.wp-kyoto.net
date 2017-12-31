@@ -1,5 +1,10 @@
 import WPAPI from 'wpapi';
-const endpoint = 'https://api.wp-kyoto.net/wp-json'
+
+// util
+import {
+  getMainApiUrl,
+} from '../../../../settings/api';
+const endpoint = `${getMainApiUrl()}wp-json`
 const wp = new WPAPI({endpoint})
 
 export function listWPPosts(lang = 'ja') {
