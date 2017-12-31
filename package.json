@@ -24,6 +24,9 @@
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
     "power-assert": "^1.4.4",
+    "prettier": "1.9.2",
+    "prettier-eslint": "^8.7.0",
+    "prettier-eslint-cli": "^4.7.0",
     "prop-types": "^15.6.0",
     "react-scripts": "^1.0.17",
     "react-snapshot": "^1.3.0",
@@ -34,6 +37,7 @@
     "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "format": "prettier-eslint --write \"src/**/*.js\"",
     "jest": "./node_modules/jest/bin/jest.js"
   }
 }
