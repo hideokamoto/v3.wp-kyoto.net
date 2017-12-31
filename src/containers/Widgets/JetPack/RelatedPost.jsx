@@ -1,6 +1,4 @@
-import React, {
-  Fragment,
-} from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -29,12 +27,12 @@ const ContainerWidgetRelatedPost = (props) => {
   const related = item['jetpack-related-posts'] || [];
   if (related.length === 0) return <div />;
   return (
-    <Fragment>
+    <div>
       <Header as="h2" content="Related posts" />
       <Item.Group divided relaxed>
         {related.map((item, key) => <WidgetJetPackRelatedPost key={key} item={item} />)}
       </Item.Group>
-    </Fragment>
+    </div>
   )
 }
 ContainerWidgetRelatedPost.propTypes = {
