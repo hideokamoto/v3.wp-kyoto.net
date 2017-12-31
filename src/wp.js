@@ -1,14 +1,14 @@
-const WPAPI = require("wpapi");
-const endpoint = "https://api.wp-kyoto.net/wp-json";
-const wp = new WPAPI({ endpoint });
+const WPAPI = require('wpapi')
+const endpoint = 'https://api.wp-kyoto.net/wp-json'
+const wp = new WPAPI({ endpoint })
 
-export const PostNotFoundNumber = 0;
-export const PostListLimit = 10;
-export const PostListAdditional = 1;
+export const PostNotFoundNumber = 0
+export const PostListLimit = 10
+export const PostListAdditional = 1
 /* eslint-disable arrow-body-style */
 export const getPostList = (pager, lang) => {
-  if (lang !== "undefined" && lang === "en") {
-    return getEnglishPostList();
+  if (lang !== 'undefined' && lang === 'en') {
+    return getEnglishPostList()
   }
 
   return new Promise((resolve, reject) => {
@@ -18,15 +18,15 @@ export const getPostList = (pager, lang) => {
       .page(pager)
       .then(data => {
         if (data.length === PostNotFoundNumber) {
-          reject(new Error("post not found"));
+          reject(new Error('post not found'))
         }
-        resolve(data);
+        resolve(data)
       })
       .catch(err => {
-        reject(err);
-      });
-  });
-};
+        reject(err)
+      })
+  })
+}
 
 export const getEnglishPostList = () => {
   return new Promise((resolve, reject) => {
@@ -35,15 +35,15 @@ export const getEnglishPostList = () => {
       .get()
       .then(data => {
         if (data.length === PostNotFoundNumber) {
-          reject(new Error("post not found"));
+          reject(new Error('post not found'))
         }
-        resolve(data);
+        resolve(data)
       })
       .catch(err => {
-        reject(err);
-      });
-  });
-};
+        reject(err)
+      })
+  })
+}
 
 export const getEnglishPostBySlug = slug => {
   return new Promise((resolve, reject) => {
@@ -52,19 +52,19 @@ export const getEnglishPostBySlug = slug => {
       .get()
       .then(data => {
         if (data.length === PostNotFoundNumber) {
-          reject(new Error("post not found"));
+          reject(new Error('post not found'))
         }
-        resolve(data);
+        resolve(data)
       })
       .catch(err => {
-        reject(err);
-      });
-  });
-};
+        reject(err)
+      })
+  })
+}
 
 export const getPostBySlug = (slug, lang) => {
-  if (lang !== "undefined" && lang === "en") {
-    return getEnglishPostBySlug(slug);
+  if (lang !== 'undefined' && lang === 'en') {
+    return getEnglishPostBySlug(slug)
   }
 
   return new Promise((resolve, reject) => {
@@ -74,13 +74,13 @@ export const getPostBySlug = (slug, lang) => {
       .embed()
       .then(data => {
         if (data.length === PostNotFoundNumber) {
-          reject(new Error("post not found"));
+          reject(new Error('post not found'))
         }
-        resolve(data);
+        resolve(data)
       })
       .catch(err => {
-        reject(err);
-      });
-  });
-};
+        reject(err)
+      })
+  })
+}
 /* eslint-enable arrow-body-style */

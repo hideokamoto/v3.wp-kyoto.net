@@ -1,36 +1,32 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 // Redux
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
 // Router
-import {
-  Route,
-  withRouter,
-  Switch,
-} from 'react-router-dom';
+import { Route, withRouter, Switch } from 'react-router-dom'
 
 // Pages
-import Top from './pages/Top';
-import Single from './pages/Single';
+import Top from './pages/Top'
+import Single from './pages/Single'
 
-const JaRouteSingle = (props) => {
-  const { slug } = props.match.params;
-  return  <Single lang="ja" slug={slug} />
+const JaRouteSingle = props => {
+  const { slug } = props.match.params
+  return <Single lang="ja" slug={slug} />
 }
 
 JaRouteSingle.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      slug: PropTypes.string.isRequired,
-    }).isRequired,
+      slug: PropTypes.string.isRequired
+    }).isRequired
   })
 }
 JaRouteSingle.defaultProps = {
   match: {
     params: {
       slug: ''
-    },
+    }
   }
 }
 
@@ -41,5 +37,4 @@ const JaRoutes = () => (
   </Switch>
 )
 
-
-export default withRouter(connect()(JaRoutes));
+export default withRouter(connect()(JaRoutes))

@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 // Containers
-import Head from '../../containers/Helmet';
+import Head from '../../containers/Helmet'
 // Component
-import About from '../../components/Static/About';
+import About from '../../components/Static/About'
 
 const PageAbout = () => (
   <div>
@@ -10,4 +10,4 @@ const PageAbout = () => (
     <About />
   </div>
 )
-export default PageAbout;
+export default PageAbout

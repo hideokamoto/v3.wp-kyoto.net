@@ -1,13 +1,13 @@
-import { combineReducers } from "redux";
+import { combineReducers } from 'redux'
 // lib reducers
-import { routerReducer } from "react-router-redux";
+import { routerReducer } from 'react-router-redux'
 
 // custom reducers
-import { wpPosts } from "./wp/posts";
+import { wpPosts } from './wp/posts'
 
 const rootReducer = combineReducers({
   router: routerReducer,
   wpPosts
-});
+})
 
-export default rootReducer;
+export default rootReducer

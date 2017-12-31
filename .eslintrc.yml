@@ -1,1 +1,9 @@
-extends: standard
+extends:
+  - standard
+  - plugin:react/recommended
+rules:
+  react/prop-types: 0
+globals:
+  describe: true
+  expect: true
+  it: true
