@@ -1,27 +1,24 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 // Semantic UI
 import {
   Item,
-  Button,
 } from 'semantic-ui-react';
 
 // Component
+import WpArchiveItem from '../components/Wp/ArchiveItem';
 
 // Action
 import {
   listWpPosts,
   unsetWpPosts,
 } from '../redux/actions/creators/wp/posts';
-
-// Utils
+// conf
 import {
-  formatRenderedMarkup,
-  formatDate,
-} from '../utils/format';
+  getDefaultLanguage,
+} from '../settings/lang'
 
 class ContainerListWPPosts extends Component {
   componentWillMount() {
@@ -38,32 +35,13 @@ class ContainerListWPPosts extends Component {
     const {
       isFetching,
       items,
+      url,
     } = this.props;
     if (isFetching) return <p>loading...</p>;
     if (items.length === 0) return <p>no posts</p>;
-    const lists = items.map((item, key) => {
-      return (
-        <Item key={key}>
-          <Item.Content>
-            <Item.Header as={Link} to={`/${item.slug}`}>{item.title.rendered}</Item.Header>
-            <Item.Meta>
-              <span>{formatDate(item.date)}</span>
-            </Item.Meta>
-            <Item.Description>
-              <div dangerouslySetInnerHTML={formatRenderedMarkup(item.excerpt.rendered)} />
-            </Item.Description>
-            <Item.Extra>
-              <Button floated='right' as={Link} to={`/${item.slug}`}>
-                Read more
-              </Button>
-            </Item.Extra>
-          </Item.Content>
-        </Item>
-      );
-    })
     return (
       <Item.Group divided relaxed>
-        {lists}
+        {items.map((item, key) => <WpArchiveItem key={key} item={item} url={url} />)}
       </Item.Group>
     );
   }
@@ -72,9 +50,11 @@ ContainerListWPPosts.propTypes = {
   lang: PropTypes.string,
   items: PropTypes.array.isRequired,
   isFetching: PropTypes.bool.isRequired,
+  url: PropTypes.string,
 }
 ContainerListWPPosts.defaultProps = {
-  lang: 'ja'
+  lang: getDefaultLanguage(),
+  url: '',
 }
 
 function mapStateToProp(state) {

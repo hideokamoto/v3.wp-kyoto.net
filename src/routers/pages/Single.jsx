@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Containers
+// conf
+import {
+  getDefaultLanguage,
+} from '../../settings/lang'
 
 const PageSingle = (props) => (
   <div>
@@ -13,7 +16,7 @@ PageSingle.propTypes = {
   lang: PropTypes.string,
 }
 PageSingle.defaultProps = {
-  lang: 'ja'
+  lang: getDefaultLanguage()
 }
 
 export default PageSingle;

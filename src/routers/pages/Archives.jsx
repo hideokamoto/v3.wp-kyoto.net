@@ -4,17 +4,24 @@ import PropTypes from 'prop-types';
 // Containers
 import ContainerListWPPosts from '../../containers/WpListPosts';
 
-const PageArchives = (props) => (
-  <div>
-    <ContainerListWPPosts lang={props.lang} />
-  </div>
-)
+// conf
+import {
+  getDefaultLanguage,
+} from '../../settings/lang'
+
+const PageArchives = (props) => {
+  return (
+    <div>
+      <ContainerListWPPosts lang={props.lang} url={props.url} />
+    </div>
+  )
+}
 
 PageArchives.propTypes = {
   lang: PropTypes.string,
 }
 PageArchives.defaultProps = {
-  lang: 'ja'
+  lang: getDefaultLanguage()
 }
 
 export default PageArchives;
