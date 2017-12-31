@@ -14,6 +14,10 @@ import {
 
 // Pages
 
+// Routes
+import JaRoutes from './Japan';
+import EnRoutes from './English';
+
 class Routes extends React.Component {
   /*
   componentWillUpdate() {
@@ -27,9 +31,8 @@ class Routes extends React.Component {
     return (
       <Switch>
         <Route exact path="/about" component={() => <p>RouteAbout</p>} />
-        <Route exact path="/" component={() => <p>Top</p>} />
-        <Route path="/en" component={() => <p>RouteEnTop</p>} />
-        <Route path="/:slug" component={() => <p>RouteSingle</p>} />
+        <Route path="/en" component={EnRoutes} />
+        <Route path="/" component={JaRoutes} />
       </Switch>
     )
   }
