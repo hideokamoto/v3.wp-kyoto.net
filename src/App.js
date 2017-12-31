@@ -10,7 +10,8 @@ import {
 
 // components
 import AppLayouts from './components/Layouts';
-import  AdAmazonLeaderBoard from './components/Ad/Amazon';
+//<AdAmazonLeaderBoard />
+//import AdAmazonLeaderBoard from './components/Ad/Amazon';
 
 // routes
 import Routes from './routers/index';
@@ -29,7 +30,6 @@ class App extends Component {
         <ConnectedRouter history={history}>
           <BrowserRouter>
             <AppLayouts>
-              <AdAmazonLeaderBoard />
               <Routes />
             </AppLayouts>
           </BrowserRouter>

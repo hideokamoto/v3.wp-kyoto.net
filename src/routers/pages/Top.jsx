@@ -2,10 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Containers
+import ContainerListWPPosts from '../../containers/WpListPosts';
 
 const PageTop = (props) => (
   <div>
-    PageTop: {props.lang}
+    <ContainerListWPPosts lang={props.lang} />
   </div>
 );
 PageTop.propTypes = {
