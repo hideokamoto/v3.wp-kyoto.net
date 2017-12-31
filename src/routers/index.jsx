@@ -20,14 +20,12 @@ import JaRoutes from './Japan';
 import EnRoutes from './English';
 
 class Routes extends React.Component {
-  /*
   componentWillUpdate() {
     const MauticJS = 'MauticJS'
     if (window.hasOwnProperty(MauticJS)) {
       window[MauticJS].sendPageview()
     }
   }
-  */
   render () {
     return (
       <Switch>
