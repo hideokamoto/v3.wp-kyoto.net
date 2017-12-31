@@ -1,7 +1,5 @@
-
-
 export function formatRenderedMarkup(content) {
-  return {__html: content};
+  return { __html: content };
 }
 
 export function formatDate(date) {

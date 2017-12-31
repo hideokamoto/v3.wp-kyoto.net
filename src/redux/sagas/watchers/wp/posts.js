@@ -1,22 +1,16 @@
 /* eslint-disable no-constant-condition, no-use-before-define */
-import {
-  call,
-  put,
-  fork,
-  takeEvery,
-} from 'redux-saga/effects';
+import { call, put, fork, takeEvery } from "redux-saga/effects";
 
 // Action types
-import { WpActionTypes } from '../../../actions/types/wp/posts';
+import { WpActionTypes } from "../../../actions/types/wp/posts";
 
 // Actions
-import * as actions from '../../../actions/creators/wp/posts';
+import * as actions from "../../../actions/creators/wp/posts";
 
 // Workers
-import * as workers from '../../workers//wp/posts';
+import * as workers from "../../workers//wp/posts";
 
 // Utils
-
 
 export function* wpPostSaga() {
   yield fork(listWpPosts);
@@ -28,10 +22,7 @@ export function* getWpPost() {
 }
 export function* runGetWpPost(action) {
   try {
-    const {
-      slug,
-      lang,
-    } = action;
+    const { slug, lang } = action;
     const data = yield call(workers.getWpPostBySlug, slug, lang);
     yield put(actions.setWpPost(data));
   } catch (e) {
@@ -45,12 +36,10 @@ export function* listWpPosts() {
 
 export function* runListWPPosts(action) {
   try {
-    const {
-      lang,
-    } = action;
-    const data = yield call(workers.listWPPosts, lang)
-    yield put(actions.setWpPosts(data))
+    const { lang } = action;
+    const data = yield call(workers.listWPPosts, lang);
+    yield put(actions.setWpPosts(data));
   } catch (e) {
-    yield put(actions.setWpPosts([]))
+    yield put(actions.setWpPosts([]));
   }
 }

@@ -1,4 +1,3 @@
-
 export function getDefaultLanguage() {
-  return 'ja';
+  return "ja";
 }

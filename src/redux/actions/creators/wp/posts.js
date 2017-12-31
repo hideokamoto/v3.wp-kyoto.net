@@ -1,43 +1,43 @@
-import { WpActionTypes } from '../../types/wp/posts';
+import { WpActionTypes } from "../../types/wp/posts";
 
 // LIST WP POSTS
-export function listWpPosts( lang, search = '', limit = 10, query = {}) {
+export function listWpPosts(lang, search = "", limit = 10, query = {}) {
   return {
     type: WpActionTypes.LIST_POSTS,
     lang,
     search,
     limit,
-    query,
-  }
+    query
+  };
 }
 export function setWpPosts(posts) {
   return {
     type: WpActionTypes.SET_POSTS,
-    posts,
-  }
+    posts
+  };
 }
 export function unsetWpPosts() {
   return {
-    type: WpActionTypes.UNSET_POSTS,
-  }
+    type: WpActionTypes.UNSET_POSTS
+  };
 }
 
 // GET POST
-export function getWpPost(slug, lang = 'ja') {
+export function getWpPost(slug, lang = "ja") {
   return {
     type: WpActionTypes.GET_POST,
     slug,
-    lang,
-  }
+    lang
+  };
 }
 export function setWpPost(post) {
   return {
     type: WpActionTypes.SET_POST,
-    post,
-  }
+    post
+  };
 }
 export function unsetWpPost() {
   return {
-    type: WpActionTypes.UNSET_POST,
-  }
+    type: WpActionTypes.UNSET_POST
+  };
 }
