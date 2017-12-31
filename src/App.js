@@ -1,15 +1,29 @@
 import React, { Component } from 'react';
-
+// Redux
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
 
+// Router
 import {
   BrowserRouter,
   Route,
   Switch
-} from 'react-router-dom'
+} from 'react-router-dom';
+
+// Semantic UI
+import {
+  Button,
+  Container,
+  Grid,
+  Divider,
+  Header,
+} from 'semantic-ui-react';
+
+// components
+import AppLayouts from './components/Layouts';
+
 import './App.css';
-import Header from './components/header/index';
+//import Header from './components/header/index';
 import Globnav from './components/globnav/index';
 
 import RouteTop from './routes/top'
@@ -75,7 +89,11 @@ class App extends Component {
     return (
       <Provider store={store}>
         <ConnectedRouter history={history}>
-          <RouterLayout />
+          <BrowserRouter>
+            <AppLayouts>
+              aaa
+            </AppLayouts>
+          </BrowserRouter>
         </ConnectedRouter>
       </Provider>
     );
