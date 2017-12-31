@@ -20,6 +20,14 @@ const WpSinglePost = (props) => {
         <Header.Subheader>
           {formatDate(props.item.date)}
         </Header.Subheader>
+        {
+          props.item._embedded.author[0].name?
+            (
+              <Header.Subheader>
+                投稿者: {props.item._embedded.author[0].name}
+              </Header.Subheader>
+            ) : ''
+        }
       </Header>
       <div dangerouslySetInnerHTML={formatRenderedMarkup(props.item.content.rendered)} />
     </article>
