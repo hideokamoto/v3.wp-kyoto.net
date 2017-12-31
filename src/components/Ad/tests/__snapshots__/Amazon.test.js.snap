@@ -22,6 +22,7 @@ ShallowWrapper {
         height="90"
         scrolling="no"
         src="https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF"
+        title="show kindle book searched by WordPress."
         width="728"
       />,
       "unit": "leaderboard",
@@ -35,6 +36,7 @@ ShallowWrapper {
         "height": "90",
         "scrolling": "no",
         "src": "https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF",
+        "title": "show kindle book searched by WordPress.",
         "width": "728",
       },
       "ref": null,
@@ -54,6 +56,7 @@ ShallowWrapper {
           height="90"
           scrolling="no"
           src="https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF"
+          title="show kindle book searched by WordPress."
           width="728"
         />,
         "unit": "leaderboard",
@@ -67,6 +70,7 @@ ShallowWrapper {
           "height": "90",
           "scrolling": "no",
           "src": "https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF",
+          "title": "show kindle book searched by WordPress.",
           "width": "728",
         },
         "ref": null,

@@ -14,6 +14,7 @@ const AdAmazonLeaderBoard = (props) => {
         width="728"
         height="90"
         scrolling="no"
+        title={`show kindle book searched by ${search}.`}
       />
     </Advertisement>
   );
