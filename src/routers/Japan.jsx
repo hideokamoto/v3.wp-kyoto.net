@@ -10,11 +10,13 @@ import {
 } from 'react-router-dom';
 
 // Pages
+import Top from './pages/Top';
+import Single from './pages/Single';
 
 const JaRoutes = (props) => (
   <Switch>
-    <Route exact path="/" component={() => <p>Top</p>} />
-    <Route path="/:slug" component={() => <p>RouteSingle</p>} />
+    <Route exact path="/" component={() => <Top lang="ja" />} />
+    <Route path="/:slug" component={() => <Single lang="ja" />} />
   </Switch>
 )
 

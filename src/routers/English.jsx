@@ -10,11 +10,13 @@ import {
 } from 'react-router-dom';
 
 // Pages
+import Archives from './pages/Archives';
+import Single from './pages/Single';
 
 const EnRoutes = (props) => (
   <Switch>
-    <Route exact path={`${props.match.url}/`} component={() => <p>en Top</p>} />
-    <Route path={`${props.match.url}/:slug`} component={() => <p>en RouteSingle</p>} />
+    <Route exact path={`${props.match.url}/`} component={() => <Archives lang="en" />} />
+    <Route path={`${props.match.url}/:slug`} component={() => <Single lang="en" />} />
   </Switch>
 )
 
