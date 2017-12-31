@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdAmazonLeaderBoard should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <AdAmazonLeaderBoard />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "centered": true,
+      "children": <iframe
+        height="90"
+        scrolling="no"
+        src="https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF"
+        title="show kindle book searched by WordPress."
+        width="728"
+      />,
+      "unit": "leaderboard",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "height": "90",
+        "scrolling": "no",
+        "src": "https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF",
+        "title": "show kindle book searched by WordPress.",
+        "width": "728",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "iframe",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "centered": true,
+        "children": <iframe
+          height="90"
+          scrolling="no"
+          src="https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF"
+          title="show kindle book searched by WordPress."
+          width="728"
+        />,
+        "unit": "leaderboard",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "height": "90",
+          "scrolling": "no",
+          "src": "https://rcm-fe.amazon-adsystem.com/e/cm?f=ifr&t=wp-kyoto-22&o=9&p=48&l=st1&mode=kindle-jp&search=WordPress&fc1=000000&lt1=_top&lc1=A43907&bg1=FFFFFF",
+          "title": "show kindle book searched by WordPress.",
+          "width": "728",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "iframe",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
