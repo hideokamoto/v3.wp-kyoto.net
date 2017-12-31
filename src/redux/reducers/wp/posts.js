@@ -4,7 +4,33 @@ import { WpActionTypes } from '../../actions/types/wp/posts';
 
 export const wpPosts = combineReducers({
   list,
+  single,
 });
+
+export function single(state = {
+  item: {},
+  isFetching: false,
+}, action) {
+  switch (action.type) {
+    case WpActionTypes.GET_POST:
+      return {
+        isFetching: true,
+        ...state,
+      };
+    case WpActionTypes.UNSET_POST:
+      return {
+        isFetching: false,
+        item: {}
+      }
+    case WpActionTypes.SET_POST:
+      return {
+        isFetching: false,
+        item: action.post
+      }
+    default:
+      return state;
+  }
+}
 
 export function list(state = {
   items: [],

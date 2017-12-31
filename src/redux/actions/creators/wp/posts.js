@@ -21,3 +21,23 @@ export function unsetWpPosts() {
     type: WpActionTypes.UNSET_POSTS,
   }
 }
+
+// GET POST
+export function getWpPost(slug, lang = 'ja') {
+  return {
+    type: WpActionTypes.GET_POST,
+    slug,
+    lang,
+  }
+}
+export function setWpPost(post) {
+  return {
+    type: WpActionTypes.SET_POST,
+    post,
+  }
+}
+export function unsetWpPost() {
+  return {
+    type: WpActionTypes.UNSET_POST,
+  }
+}

@@ -16,7 +16,10 @@ import Single from './pages/Single';
 const JaRoutes = (props) => (
   <Switch>
     <Route exact path="/" component={() => <Top lang="ja" />} />
-    <Route path="/:slug" component={() => <Single lang="ja" />} />
+    <Route path="/:slug" component={(prop) => {
+      const { slug } = prop.match.params;
+      return  <Single lang="ja" slug={slug} />
+    }} />
   </Switch>
 )
 

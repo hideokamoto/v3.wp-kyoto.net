@@ -17,7 +17,10 @@ import Single from './pages/Single';
 const EnRoutes = (props) => (
   <Switch>
     <Route exact path={`${props.match.url}/`} component={() => <Archives lang="en" url={props.match.url} />} />
-    <Route path={`${props.match.url}/:slug`} component={() => <Single lang="en" url={props.match.url} />} />
+    <Route path={`${props.match.url}/:slug`} component={(prop) => {
+      const { slug } = prop.match.params;
+      return <Single lang="en" url={props.match.url} slug={slug} />;
+    }} />
   </Switch>
 )
 

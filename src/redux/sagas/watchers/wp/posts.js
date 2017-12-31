@@ -20,6 +20,23 @@ import * as workers from '../../workers//wp/posts';
 
 export function* wpPostSaga() {
   yield fork(listWpPosts);
+  yield fork(getWpPost);
+}
+
+export function* getWpPost() {
+  yield takeEvery(WpActionTypes.GET_POST, runGetWpPost);
+}
+export function* runGetWpPost(action) {
+  try {
+    const {
+      slug,
+      lang,
+    } = action;
+    const data = yield call(workers.getWpPostBySlug, slug, lang);
+    yield put(actions.setWpPost(data));
+  } catch (e) {
+    yield put(actions.setWpPost({}));
+  }
 }
 
 export function* listWpPosts() {
