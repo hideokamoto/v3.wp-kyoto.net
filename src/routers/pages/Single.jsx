@@ -5,6 +5,7 @@ import {
   Divider,
 } from 'semantic-ui-react';
 // Containers
+import Head from '../../containers/Helmet';
 import ContainerSingleWPPost from '../../containers/WpSinglePost';
 import ContainerWidgetRelatedPost from '../../containers/Widgets/JetPack/RelatedPost';
 
@@ -15,6 +16,7 @@ import {
 
 const PageSingle = (props) => (
   <div>
+    <Head />
     <ContainerSingleWPPost lang={props.lang} slug={props.slug} />
     <Divider />
     <ContainerWidgetRelatedPost lang={props.lang} />

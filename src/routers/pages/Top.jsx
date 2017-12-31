@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Containers
+import Head from '../../containers/Helmet';
 import ContainerListWPPosts from '../../containers/WpListPosts';
 // conf
 import {
@@ -10,6 +11,7 @@ import {
 
 const PageTop = (props) => (
   <div>
+    <Head />
     <ContainerListWPPosts lang={props.lang} />
   </div>
 );
