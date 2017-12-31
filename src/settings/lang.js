@@ -1,3 +1,4 @@
-export function getDefaultLanguage () {
+/* @flow */
+export function getDefaultLanguage (): string {
   return 'ja'
 }
