@@ -21,6 +21,7 @@ import {
 
 // components
 import AppLayouts from './components/Layouts';
+import  AdAmazonLeaderBoard from './components/Ad/Amazon';
 
 import './App.css';
 //import Header from './components/header/index';
@@ -91,7 +92,7 @@ class App extends Component {
         <ConnectedRouter history={history}>
           <BrowserRouter>
             <AppLayouts>
-              aaa
+              <AdAmazonLeaderBoard />
             </AppLayouts>
           </BrowserRouter>
         </ConnectedRouter>

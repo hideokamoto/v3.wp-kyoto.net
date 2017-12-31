@@ -23,7 +23,6 @@ const AppLayouts = (props) => {
         </main>
       </Container>
     </div>
-
   );
 }
 
