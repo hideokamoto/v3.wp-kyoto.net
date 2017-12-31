@@ -21,8 +21,16 @@
     "babel-preset-react": "^6.24.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.14.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "husky": "^0.14.3",
     "jest": "^21.2.1",
     "jest-cli": "^21.2.1",
+    "lint-staged": "^6.0.0",
     "power-assert": "^1.4.4",
     "prettier": "1.9.2",
     "prettier-eslint": "^8.7.0",
@@ -38,6 +46,14 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier-eslint --write \"src/**/*.js\"",
-    "jest": "./node_modules/jest/bin/jest.js"
+    "jest": "./node_modules/jest/bin/jest.js",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-eslint --write",
+      "eslint",
+      "git add"
+    ]
   }
 }

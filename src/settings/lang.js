@@ -1,3 +1,3 @@
-export function getDefaultLanguage() {
-  return "ja";
+export function getDefaultLanguage () {
+  return 'ja'
 }
