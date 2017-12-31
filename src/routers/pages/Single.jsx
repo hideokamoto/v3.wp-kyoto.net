@@ -7,6 +7,7 @@ import {
 // Containers
 import Head from '../../containers/Helmet';
 import ContainerSingleWPPost from '../../containers/WpSinglePost';
+// <ContainerWidgetRelatedPost lang={props.lang} />
 import ContainerWidgetRelatedPost from '../../containers/Widgets/JetPack/RelatedPost';
 
 // conf
@@ -19,7 +20,6 @@ const PageSingle = (props) => (
     <Head />
     <ContainerSingleWPPost lang={props.lang} slug={props.slug} />
     <Divider />
-    <ContainerWidgetRelatedPost lang={props.lang} />
   </div>
 )
 
