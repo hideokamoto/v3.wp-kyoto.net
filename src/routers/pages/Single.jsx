@@ -1,20 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 // Semantic UI
-import {
-  Divider,
-} from 'semantic-ui-react';
+import { Divider } from 'semantic-ui-react'
 // Containers
-import Head from '../../containers/Helmet';
-import ContainerSingleWPPost from '../../containers/WpSinglePost';
-import ContainerWidgetRelatedPost from '../../containers/Widgets/JetPack/RelatedPost';
+import Head from '../../containers/Helmet'
+import ContainerSingleWPPost from '../../containers/WpSinglePost'
+import ContainerWidgetRelatedPost from '../../containers/Widgets/JetPack/RelatedPost'
 
 // conf
-import {
-  getDefaultLanguage,
-} from '../../settings/lang';
+import { getDefaultLanguage } from '../../settings/lang'
 
-const PageSingle = (props) => (
+const PageSingle = props => (
   <div>
     <Head />
     <ContainerSingleWPPost lang={props.lang} slug={props.slug} />
@@ -25,11 +21,11 @@ const PageSingle = (props) => (
 
 PageSingle.propTypes = {
   lang: PropTypes.string,
-  slug: PropTypes.string,
+  slug: PropTypes.string
 }
 PageSingle.defaultProps = {
   lang: getDefaultLanguage(),
-  slug: '',
+  slug: ''
 }
 
-export default PageSingle;
+export default PageSingle

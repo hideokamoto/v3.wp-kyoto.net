@@ -1,4 +1,3 @@
-
-export function getMainApiUrl() {
-  return 'https://api.wp-kyoto.net/';
+export function getMainApiUrl () {
+  return 'https://api.wp-kyoto.net/'
 }

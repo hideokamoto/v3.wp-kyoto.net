@@ -1,9 +1,9 @@
 /* eslint-disable no-constant-condition */
-import { fork } from 'redux-saga/effects';
+import { fork } from 'redux-saga/effects'
 
 // Custom watchers
-import { wpPostSaga } from './watchers/wp/posts';
+import { wpPostSaga } from './watchers/wp/posts'
 
-export default function* root() {
-  yield fork(wpPostSaga);
+export default function * root () {
+  yield fork(wpPostSaga)
 }

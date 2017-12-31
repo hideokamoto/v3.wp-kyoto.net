@@ -1,26 +1,22 @@
-import React from 'react';
+import React from 'react'
 // Redux
-import { connect } from 'react-redux';
+import { connect } from 'react-redux'
 
 // Router
-import {
-  Route,
-  withRouter,
-  Switch,
-} from 'react-router-dom';
+import { Route, withRouter, Switch } from 'react-router-dom'
 
 // Semantic UI
 // components
 
 // Pages
-import PageAbout from './pages/About';
+import PageAbout from './pages/About'
 
 // Routes
-import JaRoutes from './Japan';
-import EnRoutes from './English';
+import JaRoutes from './Japan'
+import EnRoutes from './English'
 
 class Routes extends React.Component {
-  componentWillUpdate() {
+  componentWillUpdate () {
     const MauticJS = 'MauticJS'
     if (window.hasOwnProperty(MauticJS)) {
       window[MauticJS].sendPageview()
@@ -37,5 +33,4 @@ class Routes extends React.Component {
   }
 }
 
-
-export default withRouter(connect()(Routes));
+export default withRouter(connect()(Routes))

@@ -5,5 +5,5 @@ export const WpActionTypes = {
   UNSET_POSTS: 'UNSET_POSTS',
   GET_POST: 'GET_POST',
   SET_POST: 'SET_POST',
-  UNSET_POST: 'UNSET_POST',
-};
+  UNSET_POST: 'UNSET_POST'
+}

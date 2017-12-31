@@ -1,16 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
 // Containers
-import Head from '../../containers/Helmet';
-import ContainerListWPPosts from '../../containers/WpListPosts';
+import Head from '../../containers/Helmet'
+import ContainerListWPPosts from '../../containers/WpListPosts'
 
 // conf
-import {
-  getDefaultLanguage,
-} from '../../settings/lang'
+import { getDefaultLanguage } from '../../settings/lang'
 
-const PageArchives = (props) => {
+const PageArchives = props => {
   return (
     <div>
       <Head />
@@ -20,10 +18,10 @@ const PageArchives = (props) => {
 }
 
 PageArchives.propTypes = {
-  lang: PropTypes.string,
+  lang: PropTypes.string
 }
 PageArchives.defaultProps = {
   lang: getDefaultLanguage()
 }
 
-export default PageArchives;
+export default PageArchives

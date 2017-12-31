@@ -1,22 +1,25 @@
 /* eslint-disable no-use-before-define */
-import { combineReducers } from 'redux';
-import { WpActionTypes } from '../../actions/types/wp/posts';
+import { combineReducers } from 'redux'
+import { WpActionTypes } from '../../actions/types/wp/posts'
 
 export const wpPosts = combineReducers({
   list,
-  single,
-});
+  single
+})
 
-export function single(state = {
-  item: {},
-  isFetching: false,
-}, action) {
+export function single (
+  state = {
+    item: {},
+    isFetching: false
+  },
+  action
+) {
   switch (action.type) {
     case WpActionTypes.GET_POST:
       return {
         isFetching: true,
-        ...state,
-      };
+        ...state
+      }
     case WpActionTypes.UNSET_POST:
       return {
         isFetching: false,
@@ -28,20 +31,23 @@ export function single(state = {
         item: action.post
       }
     default:
-      return state;
+      return state
   }
 }
 
-export function list(state = {
-  items: [],
-  isFetching: false,
-}, action) {
+export function list (
+  state = {
+    items: [],
+    isFetching: false
+  },
+  action
+) {
   switch (action.type) {
     case WpActionTypes.LIST_POSTS:
       return {
         isFetching: true,
-        ...state,
-      };
+        ...state
+      }
     case WpActionTypes.UNSET_POSTS:
       return {
         isFetching: false,
@@ -53,6 +59,6 @@ export function list(state = {
         items: action.posts
       }
     default:
-      return state;
+      return state
   }
 }
