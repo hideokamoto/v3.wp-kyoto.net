@@ -27,11 +27,17 @@ const EnRoutes = (props) => (
 EnRoutes.propTypes = {
   match: PropTypes.shape({
     url: PropTypes.string,
+    params: PropTypes.shape({
+      slug: PropTypes.string,
+    }).isRequired,
   })
 }
 EnRoutes.defaultProps = {
   match: {
     url: '/en',
+    params: {
+      slug: ''
+    },
   }
 }
 
