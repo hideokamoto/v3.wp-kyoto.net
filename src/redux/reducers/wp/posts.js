@@ -2,6 +2,9 @@
 import { combineReducers } from 'redux'
 import { WpActionTypes } from '../../actions/types/wp/posts'
 
+// prerender
+import { prerenderReady } from '../../../prerender'
+
 export const wpPosts = combineReducers({
   list,
   single
@@ -26,6 +29,7 @@ export function single (
         item: {}
       }
     case WpActionTypes.SET_POST:
+      prerenderReady()
       return {
         isFetching: false,
         item: action.post
@@ -54,6 +58,7 @@ export function list (
         items: []
       }
     case WpActionTypes.SET_POSTS:
+      prerenderReady()
       return {
         isFetching: false,
         items: action.posts
