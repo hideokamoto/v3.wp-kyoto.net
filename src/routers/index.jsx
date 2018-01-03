@@ -5,6 +5,11 @@ import { connect } from 'react-redux'
 // Router
 import { Route, withRouter, Switch } from 'react-router-dom'
 
+// HOC
+import {
+  prerenderStaticPage
+} from '../prerender';
+
 // Semantic UI
 // components
 
@@ -25,7 +30,7 @@ class Routes extends React.Component {
   render () {
     return (
       <Switch>
-        <Route exact path="/about" component={PageAbout} />
+        <Route exact path="/about" component={prerenderStaticPage(PageAbout)} />
         <Route path="/en" component={EnRoutes} />
         <Route path="/" component={JaRoutes} />
       </Switch>
