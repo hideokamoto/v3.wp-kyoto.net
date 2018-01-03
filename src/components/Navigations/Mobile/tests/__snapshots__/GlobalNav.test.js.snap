@@ -1,0 +1,591 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation [Mobile] GlobalNav should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <GlobalNav />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "additionLabel": "Add ",
+      "additionPosition": "top",
+      "children": <DropdownMenu>
+        <DropdownItem>
+          <Link
+            replace={false}
+            to="/"
+          >
+            Home
+          </Link>
+        </DropdownItem>
+        <DropdownItem>
+          <Link
+            replace={false}
+            to="/about"
+          >
+            About
+          </Link>
+        </DropdownItem>
+        <DropdownItem>
+          <Link
+            replace={false}
+            to="/en"
+          >
+            English
+          </Link>
+        </DropdownItem>
+        <DropdownItem>
+          <a
+            href="https://profiles.wordpress.org/hideokamoto"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            WordPress.org
+          </a>
+        </DropdownItem>
+        <DropdownItem>
+          <a
+            href="https://github.com/hideokamoto/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+        </DropdownItem>
+        <DropdownItem>
+          Login
+        </DropdownItem>
+      </DropdownMenu>,
+      "closeOnBlur": true,
+      "deburr": false,
+      "fluid": true,
+      "icon": "dropdown",
+      "minCharacters": 1,
+      "noResultsMessage": "No results found.",
+      "openOnFocus": true,
+      "renderLabel": [Function],
+      "searchInput": "text",
+      "selectOnBlur": true,
+      "selectOnNavigation": true,
+      "text": "Menu",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/"
+            >
+              Home
+            </Link>
+          </DropdownItem>,
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/about"
+            >
+              About
+            </Link>
+          </DropdownItem>,
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/en"
+            >
+              English
+            </Link>
+          </DropdownItem>,
+          <DropdownItem>
+            <a
+              href="https://profiles.wordpress.org/hideokamoto"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              WordPress.org
+            </a>
+          </DropdownItem>,
+          <DropdownItem>
+            <a
+              href="https://github.com/hideokamoto/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </DropdownItem>,
+          <DropdownItem>
+            Login
+          </DropdownItem>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/"
+            >
+              Home
+            </Link>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Home",
+              "replace": false,
+              "to": "/",
+            },
+            "ref": null,
+            "rendered": "Home",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/about"
+            >
+              About
+            </Link>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "About",
+              "replace": false,
+              "to": "/about",
+            },
+            "ref": null,
+            "rendered": "About",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/en"
+            >
+              English
+            </Link>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "English",
+              "replace": false,
+              "to": "/en",
+            },
+            "ref": null,
+            "rendered": "English",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <a
+              href="https://profiles.wordpress.org/hideokamoto"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              WordPress.org
+            </a>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "WordPress.org",
+              "href": "https://profiles.wordpress.org/hideokamoto",
+              "rel": "noopener noreferrer",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": "WordPress.org",
+            "type": "a",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <a
+              href="https://github.com/hideokamoto/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "GitHub",
+              "href": "https://github.com/hideokamoto/",
+              "rel": "noopener noreferrer",
+              "target": "_blank",
+            },
+            "ref": null,
+            "rendered": "GitHub",
+            "type": "a",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Login",
+          },
+          "ref": null,
+          "rendered": "Login",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "additionLabel": "Add ",
+        "additionPosition": "top",
+        "children": <DropdownMenu>
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/"
+            >
+              Home
+            </Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/about"
+            >
+              About
+            </Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/en"
+            >
+              English
+            </Link>
+          </DropdownItem>
+          <DropdownItem>
+            <a
+              href="https://profiles.wordpress.org/hideokamoto"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              WordPress.org
+            </a>
+          </DropdownItem>
+          <DropdownItem>
+            <a
+              href="https://github.com/hideokamoto/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </DropdownItem>
+          <DropdownItem>
+            Login
+          </DropdownItem>
+        </DropdownMenu>,
+        "closeOnBlur": true,
+        "deburr": false,
+        "fluid": true,
+        "icon": "dropdown",
+        "minCharacters": 1,
+        "noResultsMessage": "No results found.",
+        "openOnFocus": true,
+        "renderLabel": [Function],
+        "searchInput": "text",
+        "selectOnBlur": true,
+        "selectOnNavigation": true,
+        "text": "Menu",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <DropdownItem>
+              <Link
+                replace={false}
+                to="/"
+              >
+                Home
+              </Link>
+            </DropdownItem>,
+            <DropdownItem>
+              <Link
+                replace={false}
+                to="/about"
+              >
+                About
+              </Link>
+            </DropdownItem>,
+            <DropdownItem>
+              <Link
+                replace={false}
+                to="/en"
+              >
+                English
+              </Link>
+            </DropdownItem>,
+            <DropdownItem>
+              <a
+                href="https://profiles.wordpress.org/hideokamoto"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                WordPress.org
+              </a>
+            </DropdownItem>,
+            <DropdownItem>
+              <a
+                href="https://github.com/hideokamoto/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </DropdownItem>,
+            <DropdownItem>
+              Login
+            </DropdownItem>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/"
+              >
+                Home
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Home",
+                "replace": false,
+                "to": "/",
+              },
+              "ref": null,
+              "rendered": "Home",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/about"
+              >
+                About
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "About",
+                "replace": false,
+                "to": "/about",
+              },
+              "ref": null,
+              "rendered": "About",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/en"
+              >
+                English
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "English",
+                "replace": false,
+                "to": "/en",
+              },
+              "ref": null,
+              "rendered": "English",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <a
+                href="https://profiles.wordpress.org/hideokamoto"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                WordPress.org
+              </a>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "WordPress.org",
+                "href": "https://profiles.wordpress.org/hideokamoto",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "WordPress.org",
+              "type": "a",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <a
+                href="https://github.com/hideokamoto/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </a>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "GitHub",
+                "href": "https://github.com/hideokamoto/",
+                "rel": "noopener noreferrer",
+                "target": "_blank",
+              },
+              "ref": null,
+              "rendered": "GitHub",
+              "type": "a",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Login",
+            },
+            "ref": null,
+            "rendered": "Login",
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
