@@ -1,3 +1,3 @@
-export const renderered = () => {
+export const prerenderReady = () => {
   window.prerenderReady = true
 }
