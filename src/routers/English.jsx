@@ -10,16 +10,16 @@ import { Route, withRouter, Switch } from 'react-router-dom'
 import Archives from './pages/Archives'
 import Single from './pages/Single'
 // HOC
-import {
-  prerenderStaticPage
-} from '../prerender';
+import { prerenderStaticPage } from '../prerender'
 
 const EnRoutes = props => (
   <Switch>
     <Route
       exact
       path={`${props.match.url}/`}
-      component={prerenderStaticPage(() => <Archives lang="en" url={props.match.url} />)}
+      component={prerenderStaticPage(() => (
+        <Archives lang="en" url={props.match.url} />
+      ))}
     />
     <Route
       path={`${props.match.url}/:slug`}
