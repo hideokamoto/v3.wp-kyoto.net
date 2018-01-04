@@ -55,7 +55,7 @@
     "flow": "flow check"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,jsx}": [
       "prettier-eslint --write",
       "eslint",
       "git add"
