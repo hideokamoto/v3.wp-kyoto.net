@@ -52,7 +52,7 @@
     "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.jsx\"",
     "jest": "./node_modules/jest/bin/jest.js",
     "precommit": "lint-staged && flow check",
-    "lint": "eslint \"src/**/*.js\" \"src/**/*.jsx\"",
+    "lint": "eslint \"src/**/*.js\" \"src/**/*.jsx\" \"flow-typed/*.js\"",
     "flow": "flow check"
   },
   "lint-staged": {
