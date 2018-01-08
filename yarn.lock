@@ -4786,6 +4786,10 @@ loglevel@^1.4.1:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/loglevel/-/loglevel-1.6.0.tgz#ae0caa561111498c5ba13723d6fb631d24003934"
 
+logrocket@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-0.6.1.tgz#bc0264de17600caacd0a7526d838bcfe9e9199a9"
+
 longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
