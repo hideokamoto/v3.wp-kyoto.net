@@ -4,10 +4,12 @@ import { routerReducer } from 'react-router-redux'
 
 // custom reducers
 import { wpPosts } from './wp/posts'
+import { wpPage } from './wp/pages'
 
 const rootReducer = combineReducers({
   router: routerReducer,
-  wpPosts
+  wpPosts,
+  wpPage
 })
 
 export default rootReducer
