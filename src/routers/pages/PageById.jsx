@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 // import { Divider } from 'semantic-ui-react'
 // Containers
 import Head from '../../containers/Helmet'
-import ContainerWpPageBySlug from '../../containers/WpPageBySlug'
+import ContainerWpPageBySlug from '../../containers/WpPageById'
 
 // conf
 import { getDefaultLanguage } from '../../settings/lang'

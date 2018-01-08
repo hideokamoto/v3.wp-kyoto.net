@@ -54,9 +54,6 @@ class GlobalNav extends React.Component {
           rel="noopener noreferrer"
           name="GitHub"
         />
-        <Menu.Menu position="right">
-          <Menu.Item name="login" />
-        </Menu.Menu>
       </Menu>
     )
   }
