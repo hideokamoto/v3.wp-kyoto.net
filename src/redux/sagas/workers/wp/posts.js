@@ -12,6 +12,15 @@ export function listWPPosts (lang = 'ja', search) {
   return postList.search(search)
 }
 
+export function listWPSubPosts (lang = 'ja', categoryId = 0, search) {
+  const postList = wp
+    .posts()
+    .categories(categoryId)
+    .perPage(3)
+  if (!search) return postList
+  return postList.search(search)
+}
+
 export function listWPMultilingalPosts (lang = 'en') {
   return wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en&_embed`).get()
 }

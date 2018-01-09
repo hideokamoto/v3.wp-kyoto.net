@@ -28,6 +28,43 @@ export function unsetWpPosts () {
   }
 }
 
+// LIST POST(sub, for widget or top)
+export function listWpPostByCategory (
+  lang: string,
+  categoryId: number = 0,
+  isSub: boolean = true,
+  search: string = ''
+) {
+  const type = (() => {
+    if (isSub) return WpActionTypes.LIST_SUB_POSTS
+    return WpActionTypes.LIST_POSTS
+  })()
+  return {
+    type,
+    lang,
+    search,
+    categoryId
+  }
+}
+export function setWpSubPosts (categoryId: number = 0, posts: []) {
+  return {
+    type: WpActionTypes.SET_SUB_POSTS,
+    posts,
+    categoryId
+  }
+}
+export function unsetWpSubPosts (categoryId: number = 0) {
+  return {
+    type: WpActionTypes.UNSET_SUB_POSTS,
+    categoryId
+  }
+}
+export function clearWpSubPosts () {
+  return {
+    type: WpActionTypes.CLEAR_SUB_POSTS
+  }
+}
+
 // GET POST
 export function getWpPost (slug: string, lang: string = 'ja') {
   return {

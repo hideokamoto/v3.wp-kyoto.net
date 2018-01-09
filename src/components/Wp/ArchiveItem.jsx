@@ -21,13 +21,17 @@ const WpArchiveItem = props => {
         <Item.Meta>
           <span>{formatDate(props.item.date)}</span>
         </Item.Meta>
-        <Item.Description>
-          <div
-            dangerouslySetInnerHTML={formatRenderedMarkup(
-              props.item.excerpt.rendered
-            )}
-          />
-        </Item.Description>
+        {props.showDescription ? (
+          <Item.Description>
+            <div
+              dangerouslySetInnerHTML={formatRenderedMarkup(
+                props.item.excerpt.rendered
+              )}
+            />
+          </Item.Description>
+        ) : (
+          <div />
+        )}
         <Item.Extra>
           <Button floated="right" as={Link} to={url}>
             Read more
@@ -41,10 +45,12 @@ const WpArchiveItem = props => {
 WpArchiveItem.propTypes = {
   item: PropTypes.shape({
     slug: PropTypes.string
-  })
+  }),
+  showDescription: PropTypes.bool
 }
 WpArchiveItem.defaultProps = {
-  item: {}
+  item: {},
+  showDescription: true
 }
 
 export default WpArchiveItem

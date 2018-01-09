@@ -8,13 +8,27 @@ import { WpActionTypes } from '../../../actions/types/wp/posts'
 import * as actions from '../../../actions/creators/wp/posts'
 
 // Workers
-import * as workers from '../../workers//wp/posts'
+import * as workers from '../../workers/wp/posts'
 
 // Utils
 
 export function * wpPostSaga () {
   yield fork(listWpPosts)
   yield fork(getWpPost)
+  yield fork(listWPSubPosts)
+}
+
+export function * listWPSubPosts () {
+  yield takeEvery(WpActionTypes.LIST_SUB_POSTS, runListWPSubPosts)
+}
+export function * runListWPSubPosts (action) {
+  const { lang, search, categoryId } = action
+  try {
+    const data = yield call(workers.listWPSubPosts, lang, categoryId, search)
+    yield put(actions.setWpSubPosts(categoryId, data))
+  } catch (e) {
+    yield put(actions.setWpSubPosts(categoryId, []))
+  }
 }
 
 export function * getWpPost () {
