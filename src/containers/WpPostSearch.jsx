@@ -30,26 +30,28 @@ class ContainerSearchWpPosts extends Component {
     const { search } = this.state
     return (
       <Container>
-        <Form onSubmit={this.handleSubmit}>
-          <Form.Field>
-            <Input
-              fluid
-              icon={
-                <Icon
-                  name="search"
-                  inverted
-                  circular
-                  link
-                  onClick={this.handleSubmit}
-                />
-              }
-              placeholder="Search..."
-              value={search}
-              name="search"
-              onChange={this.handleChange}
-            />
-          </Form.Field>
-        </Form>
+        <div style={{ paddingBottom: '15px', marginBottom: '15px' }}>
+          <Form onSubmit={this.handleSubmit}>
+            <Form.Field>
+              <Input
+                fluid
+                icon={
+                  <Icon
+                    name="search"
+                    inverted
+                    circular
+                    link
+                    onClick={this.handleSubmit}
+                  />
+                }
+                placeholder="Search..."
+                value={search}
+                name="search"
+                onChange={this.handleChange}
+              />
+            </Form.Field>
+          </Form>
+        </div>
       </Container>
     )
   }
