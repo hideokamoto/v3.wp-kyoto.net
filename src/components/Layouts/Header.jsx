@@ -20,7 +20,9 @@ const AppHeader = props => {
                 <Header.Content>
                   <Link to="/">WP-Kyoto</Link>
                 </Header.Content>
-                <Header.Subheader>WordPressとかAWSのブログ</Header.Subheader>
+                <Header.Subheader>
+                  京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
+                </Header.Subheader>
               </Header>
             </Grid.Column>
             <Grid.Column>

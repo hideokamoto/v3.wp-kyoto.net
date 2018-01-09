@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
+import { Container } from 'semantic-ui-react'
 
 // Component
 import WpSinglePost from '../components/Wp/SinglePost'
@@ -23,8 +24,18 @@ class ContainerWpPageById extends Component {
   }
   render () {
     const { isFetching, item } = this.props
-    if (isFetching) return <p>loading...</p>
-    return <WpSinglePost item={item} />
+    if (isFetching) {
+      return (
+        <Container>
+          <p>loading...</p>
+        </Container>
+      )
+    }
+    return (
+      <Container>
+        <WpSinglePost item={item} />
+      </Container>
+    )
   }
 }
 ContainerWpPageById.propTypes = {

@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 // Semantic UI
-import { Item, Header } from 'semantic-ui-react'
+import { Container, Item, Header } from 'semantic-ui-react'
 
 // Component
 import WidgetJetPackRelatedPost from '../../../components/Widgets/JetPack/RelatedPost'
@@ -14,18 +14,24 @@ import { getDefaultLanguage } from '../../../settings/lang'
 const ContainerWidgetRelatedPost = props => {
   const { isFetching, item, lang } = props
   if (lang !== getDefaultLanguage()) return <div />
-  if (isFetching) return <p>loading...</p>
+  if (isFetching) {
+    return (
+      <Container>
+        <p>loading...</p>
+      </Container>
+    )
+  }
   const related = item['jetpack-related-posts'] || []
   if (related.length === 0) return <div />
   return (
-    <div>
+    <Container>
       <Header as="h2" content="Related posts" />
       <Item.Group divided relaxed>
         {related.map((item, key) => (
           <WidgetJetPackRelatedPost key={key} item={item} />
         ))}
       </Item.Group>
-    </div>
+    </Container>
   )
 }
 ContainerWidgetRelatedPost.propTypes = {

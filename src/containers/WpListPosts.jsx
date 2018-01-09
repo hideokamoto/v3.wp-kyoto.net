@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 // Semantic UI
-import { Item } from 'semantic-ui-react'
+import { Container, Item } from 'semantic-ui-react'
 
 // Component
 import WpArchiveItem from '../components/Wp/ArchiveItem'
@@ -23,14 +23,28 @@ class ContainerListWPPosts extends Component {
   }
   render () {
     const { isFetching, items, url } = this.props
-    if (isFetching) return <p>loading...</p>
-    if (items.length === 0) return <p>no posts</p>
+    if (isFetching) {
+      return (
+        <Container>
+          <p>loading...</p>
+        </Container>
+      )
+    }
+    if (items.length === 0) {
+      return (
+        <Container>
+          <p>no posts</p>
+        </Container>
+      )
+    }
     return (
-      <Item.Group divided relaxed>
-        {items.map((item, key) => (
-          <WpArchiveItem key={key} item={item} url={url} />
-        ))}
-      </Item.Group>
+      <Container>
+        <Item.Group divided relaxed>
+          {items.map((item, key) => (
+            <WpArchiveItem key={key} item={item} url={url} />
+          ))}
+        </Item.Group>
+      </Container>
     )
   }
 }

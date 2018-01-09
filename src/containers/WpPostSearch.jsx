@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { Form, Icon, Input } from 'semantic-ui-react'
+import { Container, Form, Icon, Input } from 'semantic-ui-react'
 
 // Action
 import { listWpPosts } from '../redux/actions/creators/wp/posts'
@@ -29,26 +29,28 @@ class ContainerSearchWpPosts extends Component {
   render () {
     const { search } = this.state
     return (
-      <Form onSubmit={this.handleSubmit}>
-        <Form.Field>
-          <Input
-            fluid
-            icon={
-              <Icon
-                name="search"
-                inverted
-                circular
-                link
-                onClick={this.handleSubmit}
-              />
-            }
-            placeholder="Search..."
-            value={search}
-            name="search"
-            onChange={this.handleChange}
-          />
-        </Form.Field>
-      </Form>
+      <Container>
+        <Form onSubmit={this.handleSubmit}>
+          <Form.Field>
+            <Input
+              fluid
+              icon={
+                <Icon
+                  name="search"
+                  inverted
+                  circular
+                  link
+                  onClick={this.handleSubmit}
+                />
+              }
+              placeholder="Search..."
+              value={search}
+              name="search"
+              onChange={this.handleChange}
+            />
+          </Form.Field>
+        </Form>
+      </Container>
     )
   }
 }
