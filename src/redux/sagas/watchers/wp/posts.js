@@ -36,8 +36,8 @@ export function * listWpPosts () {
 
 export function * runListWPPosts (action) {
   try {
-    const { lang } = action
-    const data = yield call(workers.listWPPosts, lang)
+    const { lang, search } = action
+    const data = yield call(workers.listWPPosts, lang, search)
     yield put(actions.setWpPosts(data))
   } catch (e) {
     yield put(actions.setWpPosts([]))
