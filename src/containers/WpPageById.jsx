@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
-import { Container } from 'semantic-ui-react'
+import { Container, Loader } from 'semantic-ui-react'
 
 // Component
 import WpSinglePost from '../components/Wp/SinglePost'
@@ -27,7 +27,7 @@ class ContainerWpPageById extends Component {
     if (isFetching) {
       return (
         <Container>
-          <p>loading...</p>
+          <Loader active />
         </Container>
       )
     }

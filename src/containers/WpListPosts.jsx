@@ -3,7 +3,7 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 // Semantic UI
-import { Container, Item } from 'semantic-ui-react'
+import { Container, Item, Loader } from 'semantic-ui-react'
 
 // Component
 import WpArchiveItem from '../components/Wp/ArchiveItem'
@@ -26,7 +26,7 @@ class ContainerListWPPosts extends Component {
     if (isFetching) {
       return (
         <Container>
-          <p>loading...</p>
+          <Loader active />
         </Container>
       )
     }

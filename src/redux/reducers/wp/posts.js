@@ -50,7 +50,7 @@ export function list (
     case WpActionTypes.LIST_POSTS:
       return {
         isFetching: true,
-        ...state
+        items: []
       }
     case WpActionTypes.UNSET_POSTS:
       return {
