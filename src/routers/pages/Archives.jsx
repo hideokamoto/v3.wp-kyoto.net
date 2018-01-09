@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 // Containers
 import Head from '../../containers/Helmet'
 import ContainerListWPPosts from '../../containers/WpListPosts'
+// <ContainerSearchWpPosts lang={props.lang} />
+// import ContainerSearchWpPosts from '../../containers/WpPostSearch'
 
 // conf
 import { getDefaultLanguage } from '../../settings/lang'

@@ -1,7 +1,13 @@
+/* @flow */
 import { WpActionTypes } from '../../types/wp/posts'
 
 // LIST WP POSTS
-export function listWpPosts (lang, search = '', limit = 10, query = {}) {
+export function listWpPosts (
+  lang: string,
+  search: string = '',
+  limit: number = 10,
+  query: {} = {}
+) {
   return {
     type: WpActionTypes.LIST_POSTS,
     lang,
@@ -10,7 +16,7 @@ export function listWpPosts (lang, search = '', limit = 10, query = {}) {
     query
   }
 }
-export function setWpPosts (posts) {
+export function setWpPosts (posts: {}) {
   return {
     type: WpActionTypes.SET_POSTS,
     posts
@@ -23,14 +29,14 @@ export function unsetWpPosts () {
 }
 
 // GET POST
-export function getWpPost (slug, lang = 'ja') {
+export function getWpPost (slug: string, lang: string = 'ja') {
   return {
     type: WpActionTypes.GET_POST,
     slug,
     lang
   }
 }
-export function setWpPost (post) {
+export function setWpPost (post: {}) {
   return {
     type: WpActionTypes.SET_POST,
     post

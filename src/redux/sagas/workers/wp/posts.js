@@ -5,9 +5,11 @@ import { getMainApiUrl } from '../../../../settings/api'
 const endpoint = `${getMainApiUrl()}wp-json`
 const wp = new WPAPI({ endpoint })
 
-export function listWPPosts (lang = 'ja') {
+export function listWPPosts (lang = 'ja', search) {
   if (lang !== 'ja') return listWPMultilingalPosts(lang)
-  return wp.posts()
+  const postList = wp.posts()
+  if (!search) return postList
+  return postList.search(search)
 }
 
 export function listWPMultilingalPosts (lang = 'en') {
