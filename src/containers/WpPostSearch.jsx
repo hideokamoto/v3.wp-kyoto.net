@@ -30,7 +30,7 @@ class ContainerSearchWpPosts extends Component {
     const { search } = this.state
     return (
       <Container>
-        <div style={{ paddingBottom: '15px', marginBottom: '15px' }}>
+        <div style={{ padding: '15px 0', margin: '15px 0' }}>
           <Form onSubmit={this.handleSubmit}>
             <Form.Field>
               <Input
