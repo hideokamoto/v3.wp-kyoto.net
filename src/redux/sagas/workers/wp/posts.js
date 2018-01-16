@@ -6,9 +6,21 @@ import { getMainApiUrl } from '../../../../settings/api'
 const endpoint = `${getMainApiUrl()}wp-json`
 const wp = new WPAPI({ endpoint })
 
-export function listWPPosts (lang = 'ja') {
+export function listWPPosts (lang = 'ja', search) {
   if (lang !== 'ja') return listWPMultilingalPosts(lang)
-  return retryx(() => wp.posts())
+  if (!search) {
+    return retryx(() => wp.posts())
+  }
+  return retryx(() => wp.posts().search(search))
+}
+
+export function listWPSubPosts (lang = 'ja', categoryId = 0, search) {
+  const postList = wp
+    .posts()
+    .categories(categoryId)
+    .perPage(3)
+  if (!search) return postList
+  return postList.search(search)
 }
 
 export function listWPMultilingalPosts (lang = 'en') {

@@ -2,6 +2,9 @@
 import { combineReducers } from 'redux'
 import { WpActionTypes } from '../../actions/types/wp/posts'
 
+// prerender
+import { prerenderReady } from '../../../prerender'
+
 export const wpPosts = combineReducers({
   list,
   single
@@ -26,6 +29,7 @@ export function single (
         item: {}
       }
     case WpActionTypes.SET_POST:
+      prerenderReady()
       return {
         isFetching: false,
         item: action.post
@@ -38,25 +42,54 @@ export function single (
 export function list (
   state = {
     items: [],
+    subItems: {},
     isFetching: false
   },
   action
 ) {
+  let { subItems } = state
   switch (action.type) {
+    case WpActionTypes.UNSET_SUB_POSTS:
+    case WpActionTypes.LIST_SUB_POSTS:
+      return {
+        ...state,
+        subItems: {
+          ...subItems,
+          [action.categoryId]: []
+        }
+      }
     case WpActionTypes.LIST_POSTS:
       return {
+        ...state,
         isFetching: true,
-        ...state
+        items: []
       }
     case WpActionTypes.UNSET_POSTS:
       return {
+        ...state,
         isFetching: false,
         items: []
       }
-    case WpActionTypes.SET_POSTS:
+    case WpActionTypes.CLEAR_SUB_POSTS:
       return {
+        ...state,
+        subItems: {}
+      }
+    case WpActionTypes.SET_POSTS:
+      prerenderReady()
+      return {
+        ...state,
         isFetching: false,
         items: action.posts
+      }
+    case WpActionTypes.SET_SUB_POSTS:
+      prerenderReady()
+      return {
+        ...state,
+        subItems: {
+          ...subItems,
+          [action.categoryId]: action.posts
+        }
       }
     default:
       return state

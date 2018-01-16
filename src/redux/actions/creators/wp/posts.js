@@ -1,7 +1,13 @@
+/* @flow */
 import { WpActionTypes } from '../../types/wp/posts'
 
 // LIST WP POSTS
-export function listWpPosts (lang, search = '', limit = 10, query = {}) {
+export function listWpPosts (
+  lang: string,
+  search: string = '',
+  limit: number = 10,
+  query: {} = {}
+) {
   return {
     type: WpActionTypes.LIST_POSTS,
     lang,
@@ -10,7 +16,7 @@ export function listWpPosts (lang, search = '', limit = 10, query = {}) {
     query
   }
 }
-export function setWpPosts (posts) {
+export function setWpPosts (posts: {}) {
   return {
     type: WpActionTypes.SET_POSTS,
     posts
@@ -22,15 +28,52 @@ export function unsetWpPosts () {
   }
 }
 
+// LIST POST(sub, for widget or top)
+export function listWpPostByCategory (
+  lang: string,
+  categoryId: number = 0,
+  isSub: boolean = true,
+  search: string = ''
+) {
+  const type = (() => {
+    if (isSub) return WpActionTypes.LIST_SUB_POSTS
+    return WpActionTypes.LIST_POSTS
+  })()
+  return {
+    type,
+    lang,
+    search,
+    categoryId
+  }
+}
+export function setWpSubPosts (categoryId: number = 0, posts: []) {
+  return {
+    type: WpActionTypes.SET_SUB_POSTS,
+    posts,
+    categoryId
+  }
+}
+export function unsetWpSubPosts (categoryId: number = 0) {
+  return {
+    type: WpActionTypes.UNSET_SUB_POSTS,
+    categoryId
+  }
+}
+export function clearWpSubPosts () {
+  return {
+    type: WpActionTypes.CLEAR_SUB_POSTS
+  }
+}
+
 // GET POST
-export function getWpPost (slug, lang = 'ja') {
+export function getWpPost (slug: string, lang: string = 'ja') {
   return {
     type: WpActionTypes.GET_POST,
     slug,
     lang
   }
 }
-export function setWpPost (post) {
+export function setWpPost (post: {}) {
   return {
     type: WpActionTypes.SET_POST,
     post

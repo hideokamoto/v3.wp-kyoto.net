@@ -9,6 +9,10 @@ import { Route, withRouter, Switch } from 'react-router-dom'
 // Pages
 import Top from './pages/Top'
 import Single from './pages/Single'
+import PageById from './pages/PageById'
+
+// HOC
+import { prerenderStaticPage } from '../prerender'
 
 const JaRouteSingle = props => {
   const { slug } = props.match.params
@@ -32,7 +36,17 @@ JaRouteSingle.defaultProps = {
 
 const JaRoutes = () => (
   <Switch>
-    <Route exact path="/" component={() => <Top lang="ja" />} />
+    <Route
+      exact
+      path="/"
+      component={prerenderStaticPage(() => <Top lang="ja" />)}
+    />
+    <Route
+      path="/privacy-policy"
+      component={prerenderStaticPage(() => (
+        <PageById lang="ja" pageId={4915} />
+      ))}
+    />
     <Route path="/:slug" component={JaRouteSingle} />
   </Switch>
 )

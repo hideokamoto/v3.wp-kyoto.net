@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "logrocket": "^0.6.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-helmet": "^5.2.0",
@@ -52,11 +53,11 @@
     "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.jsx\"",
     "jest": "./node_modules/jest/bin/jest.js",
     "precommit": "lint-staged && flow check",
-    "lint": "eslint \"src/**/*.js\" \"src/**/*.jsx\"",
+    "lint": "eslint \"src/**/*.js\" \"src/**/*.jsx\" \"flow-typed/*.js\"",
     "flow": "flow check"
   },
   "lint-staged": {
-    "*.js": [
+    "*.{js,jsx}": [
       "prettier-eslint --write",
       "eslint",
       "git add"

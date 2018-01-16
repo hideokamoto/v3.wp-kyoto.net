@@ -7,34 +7,20 @@ import { Container, Loader } from 'semantic-ui-react'
 import WpSinglePost from '../components/Wp/SinglePost'
 
 // Action
-import { getWpPost, unsetWpPost } from '../redux/actions/creators/wp/posts'
+import { getPageById, unsetPageById } from '../redux/actions/creators/wp/pages'
 // conf
 import { getDefaultLanguage } from '../settings/lang'
 
-class ContainerSingleWPPost extends Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      currentSlug: ''
-    }
-  }
+class ContainerWpPageById extends Component {
   componentWillMount () {
-    this.getPosts(this.props)
+    this.getPageById(this.props)
   }
   componentWillUnmount () {
-    this.props.dispatch(unsetWpPost())
+    this.props.dispatch(unsetPageById())
   }
-  componentWillReceiveProps (props) {
-    if (this.state.currentSlug !== props.slug) {
-      this.getPosts(props)
-    }
-  }
-  getPosts (props) {
-    const { dispatch, lang, slug } = props
-    this.setState({
-      currentSlug: slug
-    })
-    dispatch(getWpPost(slug, lang))
+  getPageById (props) {
+    const { dispatch, lang, pageId } = props
+    dispatch(getPageById(pageId, lang))
   }
   render () {
     const { isFetching, item } = this.props
@@ -52,24 +38,23 @@ class ContainerSingleWPPost extends Component {
     )
   }
 }
-ContainerSingleWPPost.propTypes = {
+ContainerWpPageById.propTypes = {
   lang: PropTypes.string,
   item: PropTypes.shape({
     id: PropTypes.number
   }).isRequired,
   isFetching: PropTypes.bool.isRequired,
   url: PropTypes.string,
-  slug: PropTypes.string
+  pageId: PropTypes.number.isRequired
 }
-ContainerSingleWPPost.defaultProps = {
+ContainerWpPageById.defaultProps = {
   lang: getDefaultLanguage(),
-  url: '',
-  slug: ''
+  url: ''
 }
 
 function mapStateToProp (state) {
-  const { wpPosts } = state
-  const { single } = wpPosts
+  const { wpPage } = state
+  const { single } = wpPage
   const { isFetching, item } = single
   return {
     isFetching,
@@ -77,4 +62,4 @@ function mapStateToProp (state) {
   }
 }
 
-export default connect(mapStateToProp)(ContainerSingleWPPost)
+export default connect(mapStateToProp)(ContainerWpPageById)
