@@ -40,7 +40,7 @@ ShallowWrapper {
                     </Link>
                   </HeaderContent>
                   <HeaderSubheader>
-                    WordPressとかAWSのブログ
+                    京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                   </HeaderSubheader>
                 </Header>
               </GridColumn>
@@ -82,7 +82,7 @@ ShallowWrapper {
                     </Link>
                   </HeaderContent>
                   <HeaderSubheader>
-                    WordPressとかAWSのブログ
+                    京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                   </HeaderSubheader>
                 </Header>
               </GridColumn>
@@ -114,7 +114,7 @@ ShallowWrapper {
                     </Link>
                   </HeaderContent>
                   <HeaderSubheader>
-                    WordPressとかAWSのブログ
+                    京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                   </HeaderSubheader>
                 </Header>
               </GridColumn>
@@ -146,7 +146,7 @@ ShallowWrapper {
                       </Link>
                     </HeaderContent>
                     <HeaderSubheader>
-                      WordPressとかAWSのブログ
+                      京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                     </HeaderSubheader>
                   </Header>
                 </GridColumn>,
@@ -175,7 +175,7 @@ ShallowWrapper {
                       </Link>
                     </HeaderContent>
                     <HeaderSubheader>
-                      WordPressとかAWSのブログ
+                      京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                     </HeaderSubheader>
                   </Header>,
                 },
@@ -196,7 +196,7 @@ ShallowWrapper {
                         </Link>
                       </HeaderContent>,
                       <HeaderSubheader>
-                        WordPressとかAWSのブログ
+                        京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                       </HeaderSubheader>,
                     ],
                   },
@@ -235,10 +235,10 @@ ShallowWrapper {
                       "key": undefined,
                       "nodeType": "function",
                       "props": Object {
-                        "children": "WordPressとかAWSのブログ",
+                        "children": "京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。",
                       },
                       "ref": null,
-                      "rendered": "WordPressとかAWSのブログ",
+                      "rendered": "京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。",
                       "type": [Function],
                     },
                   ],
@@ -313,7 +313,7 @@ ShallowWrapper {
                       </Link>
                     </HeaderContent>
                     <HeaderSubheader>
-                      WordPressとかAWSのブログ
+                      京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                     </HeaderSubheader>
                   </Header>
                 </GridColumn>
@@ -355,7 +355,7 @@ ShallowWrapper {
                       </Link>
                     </HeaderContent>
                     <HeaderSubheader>
-                      WordPressとかAWSのブログ
+                      京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                     </HeaderSubheader>
                   </Header>
                 </GridColumn>
@@ -387,7 +387,7 @@ ShallowWrapper {
                       </Link>
                     </HeaderContent>
                     <HeaderSubheader>
-                      WordPressとかAWSのブログ
+                      京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                     </HeaderSubheader>
                   </Header>
                 </GridColumn>
@@ -419,7 +419,7 @@ ShallowWrapper {
                         </Link>
                       </HeaderContent>
                       <HeaderSubheader>
-                        WordPressとかAWSのブログ
+                        京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                       </HeaderSubheader>
                     </Header>
                   </GridColumn>,
@@ -448,7 +448,7 @@ ShallowWrapper {
                         </Link>
                       </HeaderContent>
                       <HeaderSubheader>
-                        WordPressとかAWSのブログ
+                        京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                       </HeaderSubheader>
                     </Header>,
                   },
@@ -469,7 +469,7 @@ ShallowWrapper {
                           </Link>
                         </HeaderContent>,
                         <HeaderSubheader>
-                          WordPressとかAWSのブログ
+                          京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。
                         </HeaderSubheader>,
                       ],
                     },
@@ -508,10 +508,10 @@ ShallowWrapper {
                         "key": undefined,
                         "nodeType": "function",
                         "props": Object {
-                          "children": "WordPressとかAWSのブログ",
+                          "children": "京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。",
                         },
                         "ref": null,
-                        "rendered": "WordPressとかAWSのブログ",
+                        "rendered": "京都〜大阪あたりのWebディベロッパー、主にWordPressやReactとAWSを扱ってます。",
                         "type": [Function],
                       },
                     ],

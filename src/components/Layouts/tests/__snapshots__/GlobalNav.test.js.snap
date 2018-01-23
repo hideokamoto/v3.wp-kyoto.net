@@ -20,6 +20,12 @@ ShallowWrapper {
     <Responsive
       as={[Function]}
       maxWidth={991}
+      minWidth={768}
+    />,
+    <Responsive
+      as={[Function]}
+      maxWidth={767}
+      minWidth={320}
     />,
   ],
   Symbol(enzyme.__nodes__): Array [
@@ -31,6 +37,12 @@ ShallowWrapper {
       <Responsive
         as={[Function]}
         maxWidth={991}
+        minWidth={768}
+      />,
+      <Responsive
+        as={[Function]}
+        maxWidth={767}
+        minWidth={320}
       />,
     ],
   ],
