@@ -22,6 +22,47 @@
     -->
     <title>WP-Kyoto</title>
   </head>
+  <style>
+    /* TOC */
+    #ez-toc-container {
+      background: #f9f9f9;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+      box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+      display: table;
+      margin-bottom: 1em;
+      padding: 10px;
+      position: relative;
+      width: auto;
+    }
+    #ez-toc-container.counter-hierarchy ul,
+    .ez-toc-widget-container.counter-hierarchy ul,
+    #ez-toc-container.counter-flat ul,
+    .ez-toc-widget-container.counter-flat ul {
+      counter-reset: item;
+      margin: 0;
+      padding: 0;
+    }
+    #ez-toc-container ul,
+    #ez-toc-container li,
+    #ez-toc-container ul li,
+    .ez-toc-widget-container,
+    .ez-toc-widget-container li {
+      background: 0;
+      list-style-type: none;
+      list-style: none;
+      line-height: 1.6;
+      margin: 0;
+      overflow: hidden;
+      z-index: 1;
+    }
+    #ez-toc-container.counter-decimal ul.ez-toc-list li a::before,
+    .ez-toc-widget-container.counter-decimal ul.ez-toc-list li a::before {
+      content: counters(item,".") ". ";
+      counter-increment: item;
+    }
+  </style>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
