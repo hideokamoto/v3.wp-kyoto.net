@@ -32,6 +32,7 @@ export function unsetWpPosts () {
 export function listWpPostByCategory (
   lang: string,
   categoryId: number = 0,
+  perPage: number = 3,
   isSub: boolean = true,
   search: string = ''
 ) {
@@ -42,6 +43,7 @@ export function listWpPostByCategory (
   return {
     type,
     lang,
+    perPage,
     search,
     categoryId
   }
