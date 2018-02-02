@@ -23,13 +23,12 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <AppHeader />,
-        <Container>
-          <main>
-            <p>
-              components
-            </p>
-          </main>
-        </Container>,
+        <main>
+          <p>
+            components
+          </p>
+        </main>,
+        <AppFooter />,
       ],
       "className": "App",
     },
@@ -47,16 +46,67 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "children": <main>
+          "children": <p>
+            components
+          </p>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "components",
+          },
+          "ref": null,
+          "rendered": "components",
+          "type": "p",
+        },
+        "type": "main",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <AppHeader />,
+          <main>
             <p>
               components
             </p>
           </main>,
+          <AppFooter />,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": Object {
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
@@ -79,31 +129,6 @@ ShallowWrapper {
           },
           "type": "main",
         },
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <AppHeader />,
-          <Container>
-            <main>
-              <p>
-                components
-              </p>
-            </main>
-          </Container>,
-        ],
-        "className": "App",
-      },
-      "ref": null,
-      "rendered": Array [
         Object {
           "instance": null,
           "key": undefined,
@@ -111,43 +136,6 @@ ShallowWrapper {
           "props": Object {},
           "ref": null,
           "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "children": <main>
-              <p>
-                components
-              </p>
-            </main>,
-          },
-          "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <p>
-                components
-              </p>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "components",
-              },
-              "ref": null,
-              "rendered": "components",
-              "type": "p",
-            },
-            "type": "main",
-          },
           "type": [Function],
         },
       ],

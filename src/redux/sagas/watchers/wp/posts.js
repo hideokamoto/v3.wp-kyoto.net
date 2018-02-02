@@ -22,9 +22,15 @@ export function * listWPSubPosts () {
   yield takeEvery(WpActionTypes.LIST_SUB_POSTS, runListWPSubPosts)
 }
 export function * runListWPSubPosts (action) {
-  const { lang, search, categoryId } = action
+  const { lang, search, categoryId, perPage } = action
   try {
-    const data = yield call(workers.listWPSubPosts, lang, categoryId, search)
+    const data = yield call(
+      workers.listWPSubPosts,
+      lang,
+      categoryId,
+      search,
+      perPage
+    )
     yield put(actions.setWpSubPosts(categoryId, data))
   } catch (e) {
     yield put(actions.setWpSubPosts(categoryId, []))

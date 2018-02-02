@@ -18,8 +18,8 @@ import { getDefaultLanguage } from '../settings/lang'
 
 class ContainerListWPCategoryPosts extends Component {
   componentWillMount () {
-    const { dispatch, lang, categoryId } = this.props
-    dispatch(listWpPostByCategory(lang, categoryId))
+    const { dispatch, lang, categoryId, perPage } = this.props
+    dispatch(listWpPostByCategory(lang, categoryId, perPage))
   }
   componentWillUnmount () {
     const { dispatch, categoryId } = this.props
@@ -48,11 +48,13 @@ ContainerListWPCategoryPosts.propTypes = {
   lang: PropTypes.string,
   subItems: PropTypes.object.isRequired,
   url: PropTypes.string,
-  categoryId: PropTypes.number.isRequired
+  categoryId: PropTypes.number.isRequired,
+  perPage: PropTypes.number
 }
 ContainerListWPCategoryPosts.defaultProps = {
   lang: getDefaultLanguage(),
-  url: ''
+  url: '',
+  perPage: 3
 }
 
 function mapStateToProp (state) {

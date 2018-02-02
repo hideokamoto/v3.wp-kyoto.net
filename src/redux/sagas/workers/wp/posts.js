@@ -14,11 +14,16 @@ export function listWPPosts (lang = 'ja', search) {
   return retryx(() => wp.posts().search(search))
 }
 
-export function listWPSubPosts (lang = 'ja', categoryId = 0, search) {
+export function listWPSubPosts (
+  lang = 'ja',
+  categoryId = 0,
+  search,
+  perPage = 3
+) {
   const postList = wp
     .posts()
     .categories(categoryId)
-    .perPage(3)
+    .perPage(perPage)
   if (!search) return postList
   return postList.search(search)
 }

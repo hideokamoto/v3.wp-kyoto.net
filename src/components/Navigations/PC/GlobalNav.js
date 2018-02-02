@@ -28,6 +28,13 @@ class GlobalNav extends React.Component {
         />
         <Menu.Item
           as={Link}
+          to="/products"
+          name="products"
+          active={activeItem === 'products'}
+          onClick={this.handleItemClick}
+        />
+        <Menu.Item
+          as={Link}
           to="/about"
           name="about"
           active={activeItem === 'about'}
@@ -39,13 +46,6 @@ class GlobalNav extends React.Component {
           name="english"
           active={activeItem === 'english'}
           onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          as="a"
-          href="https://profiles.wordpress.org/hideokamoto"
-          target="_blank"
-          rel="noopener noreferrer"
-          name="WordPress.org"
         />
         <Menu.Item
           as="a"

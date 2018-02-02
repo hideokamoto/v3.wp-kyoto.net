@@ -10,6 +10,8 @@ import { Route, withRouter, Switch } from 'react-router-dom'
 import Top from './pages/Top'
 import Single from './pages/Single'
 import PageById from './pages/PageById'
+// routes
+import RouteProducts from './ProductsJa'
 
 // HOC
 import { prerenderStaticPage } from '../prerender'
@@ -47,6 +49,7 @@ const JaRoutes = () => (
         <PageById lang="ja" pageId={4915} />
       ))}
     />
+    <Route path="/products" component={RouteProducts} />
     <Route path="/:slug" component={JaRouteSingle} />
   </Switch>
 )
