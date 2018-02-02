@@ -6,9 +6,7 @@ import { connect } from 'react-redux'
 import { Route, withRouter, Switch } from 'react-router-dom'
 
 // HOC
-import {
-  prerenderStaticPage
-} from '../prerender';
+import { prerenderStaticPage } from '../prerender'
 
 // Semantic UI
 // components

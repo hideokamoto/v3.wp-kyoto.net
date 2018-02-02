@@ -1,4 +1,5 @@
 import WPAPI from 'wpapi'
+import retryx from 'retryx'
 
 // util
 import { getMainApiUrl } from '../../../../settings/api'
@@ -7,9 +8,10 @@ const wp = new WPAPI({ endpoint })
 
 export function listWPPosts (lang = 'ja', search) {
   if (lang !== 'ja') return listWPMultilingalPosts(lang)
-  const postList = wp.posts()
-  if (!search) return postList
-  return postList.search(search)
+  if (!search) {
+    return retryx(() => wp.posts())
+  }
+  return retryx(() => wp.posts().search(search))
 }
 
 export function listWPSubPosts (
@@ -27,7 +29,9 @@ export function listWPSubPosts (
 }
 
 export function listWPMultilingalPosts (lang = 'en') {
-  return wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en&_embed`).get()
+  return retryx(() =>
+    wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en&_embed`).get()
+  )
 }
 
 export function getWpPostBySlug (slug, lang = 'ja') {
@@ -47,7 +51,7 @@ export function getWpPostBySlug (slug, lang = 'ja') {
 }
 
 export function getWPMultilingalPost (slug, lang = 'en') {
-  return wp
-    .url(`${endpoint}/wp/v2/posts?filter[lang]=en&_embed&slug=${slug}`)
-    .get()
+  return retryx(() =>
+    wp.url(`${endpoint}/wp/v2/posts?filter[lang]=en&_embed&slug=${slug}`).get()
+  )
 }
