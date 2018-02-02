@@ -6707,9 +6707,9 @@ ret@~0.1.10:
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
 
-retryx@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/retryx/-/retryx-0.0.6.tgz#a1163da43fbae51b4b797d0cf6c4509344ea22bb"
+retryx@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/retryx/-/retryx-0.0.7.tgz#89ad1d0094fb3a1830f8a1621ba03ed8d4a56bbd"
 
 right-align@^0.1.1:
   version "0.1.3"
