@@ -10,7 +10,7 @@ const WpSinglePost = props => {
   if (Object.keys(props.item).length === 0) return <p>No post</p>
   return (
     <article>
-      <Header as="h2">
+      <Header as="h1">
         <span
           dangerouslySetInnerHTML={formatRenderedMarkup(
             props.item.title.rendered
