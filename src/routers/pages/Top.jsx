@@ -19,30 +19,30 @@ const FeaturePostList = props => (
     <Grid columns={2} celled="internally">
       <Grid.Row>
         <Grid.Column>
-          <Header as="h4" dividing>
+          <Header as="h3" dividing>
             Amazon Alexa
           </Header>
           <ContainerListWPCategoryPosts lang={props.lang} categoryId={136} />
         </Grid.Column>
         <Grid.Column>
-          <Header as="h4" dividing>
-            React
+          <Header as="h3" dividing>
+            AWS
           </Header>
-          <ContainerListWPCategoryPosts lang={props.lang} categoryId={68} />
+          <ContainerListWPCategoryPosts lang={props.lang} categoryId={122} />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
-          <Header as="h4" dividing>
+          <Header as="h3" dividing>
             WordPress
           </Header>
           <ContainerListWPCategoryPosts lang={props.lang} categoryId={4} />
         </Grid.Column>
         <Grid.Column>
-          <Header as="h4" dividing>
-            AWS
+          <Header as="h3" dividing>
+            React
           </Header>
-          <ContainerListWPCategoryPosts lang={props.lang} categoryId={122} />
+          <ContainerListWPCategoryPosts lang={props.lang} categoryId={68} />
         </Grid.Column>
       </Grid.Row>
     </Grid>

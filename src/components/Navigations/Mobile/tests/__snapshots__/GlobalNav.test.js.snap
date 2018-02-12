@@ -31,6 +31,22 @@ ShallowWrapper {
         <DropdownItem>
           <Link
             replace={false}
+            to="/products"
+          >
+            Products
+          </Link>
+        </DropdownItem>
+        <DropdownItem>
+          <Link
+            replace={false}
+            to="/events"
+          >
+            Events
+          </Link>
+        </DropdownItem>
+        <DropdownItem>
+          <Link
+            replace={false}
             to="/about"
           >
             About
@@ -92,6 +108,22 @@ ShallowWrapper {
               to="/"
             >
               Home
+            </Link>
+          </DropdownItem>,
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/products"
+            >
+              Products
+            </Link>
+          </DropdownItem>,
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/events"
+            >
+              Events
             </Link>
           </DropdownItem>,
           <DropdownItem>
@@ -159,6 +191,62 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": "Home",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/products"
+            >
+              Products
+            </Link>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Products",
+              "replace": false,
+              "to": "/products",
+            },
+            "ref": null,
+            "rendered": "Products",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Link
+              replace={false}
+              to="/events"
+            >
+              Events
+            </Link>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Events",
+              "replace": false,
+              "to": "/events",
+            },
+            "ref": null,
+            "rendered": "Events",
             "type": [Function],
           },
           "type": [Function],
@@ -315,6 +403,22 @@ ShallowWrapper {
           <DropdownItem>
             <Link
               replace={false}
+              to="/products"
+            >
+              Products
+            </Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link
+              replace={false}
+              to="/events"
+            >
+              Events
+            </Link>
+          </DropdownItem>
+          <DropdownItem>
+            <Link
+              replace={false}
               to="/about"
             >
               About
@@ -376,6 +480,22 @@ ShallowWrapper {
                 to="/"
               >
                 Home
+              </Link>
+            </DropdownItem>,
+            <DropdownItem>
+              <Link
+                replace={false}
+                to="/products"
+              >
+                Products
+              </Link>
+            </DropdownItem>,
+            <DropdownItem>
+              <Link
+                replace={false}
+                to="/events"
+              >
+                Events
               </Link>
             </DropdownItem>,
             <DropdownItem>
@@ -443,6 +563,62 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": "Home",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/products"
+              >
+                Products
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Products",
+                "replace": false,
+                "to": "/products",
+              },
+              "ref": null,
+              "rendered": "Products",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Link
+                replace={false}
+                to="/events"
+              >
+                Events
+              </Link>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Events",
+                "replace": false,
+                "to": "/events",
+              },
+              "ref": null,
+              "rendered": "Events",
               "type": [Function],
             },
             "type": [Function],

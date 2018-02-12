@@ -18,6 +18,9 @@ class GlobalNav extends React.Component {
             <Link to="/products">Products</Link>
           </Dropdown.Item>
           <Dropdown.Item>
+            <Link to="/events">Events</Link>
+          </Dropdown.Item>
+          <Dropdown.Item>
             <Link to="/about">About</Link>
           </Dropdown.Item>
           <Dropdown.Item>

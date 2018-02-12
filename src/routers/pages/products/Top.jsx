@@ -20,7 +20,9 @@ const Top = ({ lang }) => (
   <div>
     <Head subTitle="作ったもの・サービスなど" />
     <Container>
-      <Header as="h2">作ったもの・サービスなど</Header>
+      <Header as="h2" className="mainSection-title">
+        作ったもの・サービスなど
+      </Header>
       <p>作ったものの紹介や、リリースノートなどをまとめています。</p>
       <p>
         まったく整理してなかったため、ページの用意が出来次第逐次更新予定です。
@@ -28,7 +30,9 @@ const Top = ({ lang }) => (
     </Container>
     <Divider />
     <Container>
-      <Header as="h2">プロダクト一覧</Header>
+      <Header as="h2" className="mainSection-title">
+        プロダクト一覧
+      </Header>
       <Grid columns={2} celled="internally">
         <Grid.Row>
           <Grid.Column>
@@ -91,7 +95,9 @@ const Top = ({ lang }) => (
     </Container>
     <Divider />
     <Container>
-      <Header as="h2">Recent posts (release note or tips)</Header>
+      <Header as="h2" className="mainSection-title">
+        Recent posts (release note or tips)
+      </Header>
       <ContainerListWPCategoryPosts lang={lang} categoryId={150} perPage={5} />
     </Container>
   </div>

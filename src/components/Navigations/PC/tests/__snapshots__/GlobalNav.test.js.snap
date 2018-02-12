@@ -27,6 +27,51 @@ ShallowWrapper {
         />,
         <MenuItem
           active={false}
+        >
+          <Dropdown
+            additionLabel="Add "
+            additionPosition="top"
+            closeOnBlur={true}
+            deburr={false}
+            fluid={true}
+            icon="dropdown"
+            minCharacters={1}
+            noResultsMessage="No results found."
+            openOnFocus={true}
+            renderLabel={[Function]}
+            searchInput="text"
+            selectOnBlur={true}
+            selectOnNavigation={true}
+            text="Work"
+          >
+            <DropdownMenu>
+              <DropdownItem
+                name="products"
+                onClick={[Function]}
+              >
+                <Link
+                  replace={false}
+                  to="/products"
+                >
+                  作ったもの
+                </Link>
+              </DropdownItem>
+              <DropdownItem
+                name="events"
+                onClick={[Function]}
+              >
+                <Link
+                  replace={false}
+                  to="/events"
+                >
+                  イベント登壇・参加
+                </Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        </MenuItem>,
+        <MenuItem
+          active={false}
           as={[Function]}
           name="about"
           onClick={[Function]}
@@ -38,13 +83,6 @@ ShallowWrapper {
           name="english"
           onClick={[Function]}
           to="/en"
-        />,
-        <MenuItem
-          as="a"
-          href="https://profiles.wordpress.org/hideokamoto"
-          name="WordPress.org"
-          rel="noopener noreferrer"
-          target="_blank"
         />,
         <MenuItem
           as="a"
@@ -80,6 +118,199 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "active": false,
+          "children": <Dropdown
+            additionLabel="Add "
+            additionPosition="top"
+            closeOnBlur={true}
+            deburr={false}
+            fluid={true}
+            icon="dropdown"
+            minCharacters={1}
+            noResultsMessage="No results found."
+            openOnFocus={true}
+            renderLabel={[Function]}
+            searchInput="text"
+            selectOnBlur={true}
+            selectOnNavigation={true}
+            text="Work"
+          >
+            <DropdownMenu>
+              <DropdownItem
+                name="products"
+                onClick={[Function]}
+              >
+                <Link
+                  replace={false}
+                  to="/products"
+                >
+                  作ったもの
+                </Link>
+              </DropdownItem>
+              <DropdownItem
+                name="events"
+                onClick={[Function]}
+              >
+                <Link
+                  replace={false}
+                  to="/events"
+                >
+                  イベント登壇・参加
+                </Link>
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "additionLabel": "Add ",
+            "additionPosition": "top",
+            "children": <DropdownMenu>
+              <DropdownItem
+                name="products"
+                onClick={[Function]}
+              >
+                <Link
+                  replace={false}
+                  to="/products"
+                >
+                  作ったもの
+                </Link>
+              </DropdownItem>
+              <DropdownItem
+                name="events"
+                onClick={[Function]}
+              >
+                <Link
+                  replace={false}
+                  to="/events"
+                >
+                  イベント登壇・参加
+                </Link>
+              </DropdownItem>
+            </DropdownMenu>,
+            "closeOnBlur": true,
+            "deburr": false,
+            "fluid": true,
+            "icon": "dropdown",
+            "minCharacters": 1,
+            "noResultsMessage": "No results found.",
+            "openOnFocus": true,
+            "renderLabel": [Function],
+            "searchInput": "text",
+            "selectOnBlur": true,
+            "selectOnNavigation": true,
+            "text": "Work",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <DropdownItem
+                  name="products"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/products"
+                  >
+                    作ったもの
+                  </Link>
+                </DropdownItem>,
+                <DropdownItem
+                  name="events"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/events"
+                  >
+                    イベント登壇・参加
+                  </Link>
+                </DropdownItem>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    to="/products"
+                  >
+                    作ったもの
+                  </Link>,
+                  "name": "products",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "作ったもの",
+                    "replace": false,
+                    "to": "/products",
+                  },
+                  "ref": null,
+                  "rendered": "作ったもの",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Link
+                    replace={false}
+                    to="/events"
+                  >
+                    イベント登壇・参加
+                  </Link>,
+                  "name": "events",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "イベント登壇・参加",
+                    "replace": false,
+                    "to": "/events",
+                  },
+                  "ref": null,
+                  "rendered": "イベント登壇・参加",
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "active": false,
           "as": [Function],
           "name": "about",
           "onClick": [Function],
@@ -99,21 +330,6 @@ ShallowWrapper {
           "name": "english",
           "onClick": [Function],
           "to": "/en",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "as": "a",
-          "href": "https://profiles.wordpress.org/hideokamoto",
-          "name": "WordPress.org",
-          "rel": "noopener noreferrer",
-          "target": "_blank",
         },
         "ref": null,
         "rendered": null,
@@ -153,6 +369,51 @@ ShallowWrapper {
           />,
           <MenuItem
             active={false}
+          >
+            <Dropdown
+              additionLabel="Add "
+              additionPosition="top"
+              closeOnBlur={true}
+              deburr={false}
+              fluid={true}
+              icon="dropdown"
+              minCharacters={1}
+              noResultsMessage="No results found."
+              openOnFocus={true}
+              renderLabel={[Function]}
+              searchInput="text"
+              selectOnBlur={true}
+              selectOnNavigation={true}
+              text="Work"
+            >
+              <DropdownMenu>
+                <DropdownItem
+                  name="products"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/products"
+                  >
+                    作ったもの
+                  </Link>
+                </DropdownItem>
+                <DropdownItem
+                  name="events"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/events"
+                  >
+                    イベント登壇・参加
+                  </Link>
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+          </MenuItem>,
+          <MenuItem
+            active={false}
             as={[Function]}
             name="about"
             onClick={[Function]}
@@ -164,13 +425,6 @@ ShallowWrapper {
             name="english"
             onClick={[Function]}
             to="/en"
-          />,
-          <MenuItem
-            as="a"
-            href="https://profiles.wordpress.org/hideokamoto"
-            name="WordPress.org"
-            rel="noopener noreferrer"
-            target="_blank"
           />,
           <MenuItem
             as="a"
@@ -206,6 +460,199 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "active": false,
+            "children": <Dropdown
+              additionLabel="Add "
+              additionPosition="top"
+              closeOnBlur={true}
+              deburr={false}
+              fluid={true}
+              icon="dropdown"
+              minCharacters={1}
+              noResultsMessage="No results found."
+              openOnFocus={true}
+              renderLabel={[Function]}
+              searchInput="text"
+              selectOnBlur={true}
+              selectOnNavigation={true}
+              text="Work"
+            >
+              <DropdownMenu>
+                <DropdownItem
+                  name="products"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/products"
+                  >
+                    作ったもの
+                  </Link>
+                </DropdownItem>
+                <DropdownItem
+                  name="events"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/events"
+                  >
+                    イベント登壇・参加
+                  </Link>
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "additionLabel": "Add ",
+              "additionPosition": "top",
+              "children": <DropdownMenu>
+                <DropdownItem
+                  name="products"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/products"
+                  >
+                    作ったもの
+                  </Link>
+                </DropdownItem>
+                <DropdownItem
+                  name="events"
+                  onClick={[Function]}
+                >
+                  <Link
+                    replace={false}
+                    to="/events"
+                  >
+                    イベント登壇・参加
+                  </Link>
+                </DropdownItem>
+              </DropdownMenu>,
+              "closeOnBlur": true,
+              "deburr": false,
+              "fluid": true,
+              "icon": "dropdown",
+              "minCharacters": 1,
+              "noResultsMessage": "No results found.",
+              "openOnFocus": true,
+              "renderLabel": [Function],
+              "searchInput": "text",
+              "selectOnBlur": true,
+              "selectOnNavigation": true,
+              "text": "Work",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <DropdownItem
+                    name="products"
+                    onClick={[Function]}
+                  >
+                    <Link
+                      replace={false}
+                      to="/products"
+                    >
+                      作ったもの
+                    </Link>
+                  </DropdownItem>,
+                  <DropdownItem
+                    name="events"
+                    onClick={[Function]}
+                  >
+                    <Link
+                      replace={false}
+                      to="/events"
+                    >
+                      イベント登壇・参加
+                    </Link>
+                  </DropdownItem>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/products"
+                    >
+                      作ったもの
+                    </Link>,
+                    "name": "products",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "作ったもの",
+                      "replace": false,
+                      "to": "/products",
+                    },
+                    "ref": null,
+                    "rendered": "作ったもの",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <Link
+                      replace={false}
+                      to="/events"
+                    >
+                      イベント登壇・参加
+                    </Link>,
+                    "name": "events",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "イベント登壇・参加",
+                      "replace": false,
+                      "to": "/events",
+                    },
+                    "ref": null,
+                    "rendered": "イベント登壇・参加",
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "active": false,
             "as": [Function],
             "name": "about",
             "onClick": [Function],
@@ -225,21 +672,6 @@ ShallowWrapper {
             "name": "english",
             "onClick": [Function],
             "to": "/en",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "as": "a",
-            "href": "https://profiles.wordpress.org/hideokamoto",
-            "name": "WordPress.org",
-            "rel": "noopener noreferrer",
-            "target": "_blank",
           },
           "ref": null,
           "rendered": null,

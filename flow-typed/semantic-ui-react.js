@@ -1,5 +1,5 @@
 /* eslint-disable */
 /* @flow */
-declare module 'wpapi' {
+declare module 'semantic-ui-react' {
   declare module.exports: any
 }
