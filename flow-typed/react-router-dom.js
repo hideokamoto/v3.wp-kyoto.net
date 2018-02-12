@@ -1,5 +1,5 @@
 /* eslint-disable */
 /* @flow */
-declare module 'wpapi' {
+declare module 'react-router-dom' {
   declare module.exports: any
 }

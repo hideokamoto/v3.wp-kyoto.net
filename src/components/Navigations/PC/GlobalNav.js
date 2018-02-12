@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 // Semantic UI
-import { Menu } from 'semantic-ui-react'
+import { Menu, Dropdown } from 'semantic-ui-react'
 
 class GlobalNav extends React.Component {
   constructor (props) {
@@ -27,12 +27,19 @@ class GlobalNav extends React.Component {
           onClick={this.handleItemClick}
         />
         <Menu.Item
-          as={Link}
-          to="/products"
-          name="products"
-          active={activeItem === 'products'}
-          onClick={this.handleItemClick}
-        />
+          active={activeItem === 'products' || activeItem === 'events'}
+        >
+          <Dropdown text="Work" fluid>
+            <Dropdown.Menu>
+              <Dropdown.Item name="products" onClick={this.handleItemClick}>
+                <Link to="/products">作ったもの</Link>
+              </Dropdown.Item>
+              <Dropdown.Item name="events" onClick={this.handleItemClick}>
+                <Link to="/events">イベント登壇・参加</Link>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Menu.Item>
         <Menu.Item
           as={Link}
           to="/about"
