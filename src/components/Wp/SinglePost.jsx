@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import GoogleAds from 'react-google-ads'
 
 // Semantic UI
 import { Header } from 'semantic-ui-react'
@@ -29,6 +30,13 @@ const WpSinglePost = props => {
         dangerouslySetInnerHTML={formatRenderedMarkup(
           props.item.content.rendered
         )}
+      />
+      <GoogleAds
+        client="ca-pub-6091198629319043"
+        slot="2845873311"
+        className="adsbygoogle"
+        format="auto"
+        style={{ display: 'block' }}
       />
     </article>
   )
