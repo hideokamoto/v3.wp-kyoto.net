@@ -8,8 +8,6 @@ import { BrowserRouter } from 'react-router-dom'
 
 // components
 import AppLayouts from './components/Layouts'
-// <AdAmazonLeaderBoard />
-// import AdAmazonLeaderBoard from './components/Ad/Amazon';
 
 // routes
 import Routes from './routers/index'
