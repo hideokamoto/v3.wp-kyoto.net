@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import GoogleAds from 'react-google-ads'
+import AdAmazonLeaderBoard from '../Ad/Amazon'
 // Semantic UI
 import { Header } from 'semantic-ui-react'
 // Utils
@@ -25,11 +26,19 @@ const WpSinglePost = props => {
           ''
         )}
       </Header>
+      <GoogleAds
+        client="ca-pub-6091198629319043"
+        slot="2845873311"
+        className="adsbygoogle"
+        format="auto"
+        style={{ display: 'block' }}
+      />
       <div
         dangerouslySetInnerHTML={formatRenderedMarkup(
           props.item.content.rendered
         )}
       />
+      <AdAmazonLeaderBoard />
     </article>
   )
 }
