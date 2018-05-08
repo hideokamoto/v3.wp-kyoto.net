@@ -11,7 +11,7 @@ const AppLayouts = props => {
       <Header />
       <main>{props.children}</main>
       <Footer />
-      <CookieConsent>
+      <CookieConsent onAccept={() => window.location.reload()}>
         This website uses cookies to enhance the user experience.
       </CookieConsent>
     </div>
