@@ -1,4 +1,5 @@
 import React from 'react'
+import CookieConsent from 'react-cookie-consent'
 
 // component
 import Header from './Header'
@@ -10,6 +11,9 @@ const AppLayouts = props => {
       <Header />
       <main>{props.children}</main>
       <Footer />
+      <CookieConsent>
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
     </div>
   )
 }
