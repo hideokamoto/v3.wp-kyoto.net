@@ -21,7 +21,10 @@ import EnRoutes from './English'
 class Routes extends React.Component {
   componentWillUpdate () {
     const MauticJS = 'MauticJS'
-    if (window.hasOwnProperty(MauticJS)) {
+    if (
+      window.hasOwnProperty(MauticJS) &&
+      /CookieConsent=true/.test(document.cookie)
+    ) {
       window[MauticJS].sendPageview()
     }
   }

@@ -1,26 +1,13 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
     <link rel="manifest" href="https://wp-kyoto.net/manifest.json">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css"></link>
     <link rel="stylesheet" href="/css/style.css"></link>
     <!-- <link rel="shortcut icon" href="https://wp-kyoto.net/favicon.ico"> -->
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>WP-Kyoto</title>
   </head>
   <body>
@@ -48,11 +35,12 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36617424-4"></script>
     <script type="text/plain" data-cookieconsent="statistics">
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-36617424-4');
+      if (/CookieConsent=true/.test(document.cookie)) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-36617424-4');
+      }
     </script>
     <!-- Mautic tag -->
     <script type="text/plain" data-cookieconsent="marketing">
@@ -60,7 +48,9 @@
           w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)},a=d.createElement(t),
           m=d.getElementsByTagName(t)[0];a.async=1;a.src=u;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://wb-kyoto.mautic.net/mtc.js','mt');
-      mt('send', 'pageview')
+      if (/CookieConsent=true/.test(document.cookie)) {
+        mt('send', 'pageview')
+      }
     </script>
     <script id="CookieDeclaration" src="https://consent.cookiebot.com/d78b0abc-66b7-4f11-b718-92b8ac962a24/cd.js" type="text/javascript" async></script>
   </body>
